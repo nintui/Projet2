@@ -148,7 +148,7 @@ height: 300px;
 
 }
 .polulaires{
-  width: 1200;
+  width: 1200px;
   padding: 50px 50px;
   margin: 16px 05px;
 
@@ -168,6 +168,35 @@ height: 300px;
 /*--------------------footer*-------------------------------
 .A_propos{
   justify-content: start;
+}*/
+
+
+@media screen and (max-width:500px){
+
+  #bloc_page{
+  display: block;
+    width: 100%;
+  }
+.Menu{
+  justify-content: center;
 }
 
 
+.Menu > ul{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+ 
+  
+}
+
+
+
+
+
+
+
+
+
+
+}
