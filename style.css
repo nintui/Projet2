@@ -1,0 +1,173 @@
+@font-face{
+  font-family: Raleway;
+  src: url(https://www.fontsquirrel.com/fonts/raleway) format('ttf')
+}
+body{
+  padding: 0;
+  margin: 0px;
+  width: 100%;
+}
+header{
+  width: 100%;
+ 
+  display:flex;
+  justify-content: space-between;
+height: 50px;
+
+}
+#bloc_page{
+  width: 1200px;
+
+ display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+ 
+}
+.Menu{
+  margin: 1px;
+display: flex;
+padding-top: 1px ;
+
+  justify-content: flex-end;
+
+}
+#content{
+  background-color: green;
+  margin: 0px;
+  min-height: auto;
+  width: 870px;
+ 
+}
+
+
+.blocMarseille{
+  width: 1px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.MapMarseille{
+  margin: 5px;
+
+padding: 15px;
+justify-content: left;
+background-color: yellow;
+}
+
+
+.blocFiltre{
+  background-color: bisque;
+width: 900px;
+justify-content: space-around;
+  display: flex;
+ 
+}
+#hebergements{
+  background-color: indianred;
+  display:flex;
+  flex-wrap: wrap;
+  align-content:flex-end;
+  width: 700px;
+ 
+
+}
+ 
+  
+ 
+
+
+
+
+
+.blockhebergement{
+  background-color: blueviolet;
+
+  flex-wrap: wrap;
+align-content: flex-end;
+}
+.blockhebergement  div{
+display:flex;
+  flex-direction: column;
+  background-color: coral;
+}
+
+/*--------------arrondi image*----------------------*/
+img {
+  border-radius: 4px;
+
+}
+
+/*---------------------header*------------------------*/
+
+
+ 
+
+
+
+  
+}
+nav{
+
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+ul {
+ 
+ 
+   }
+   li {
+    margin: left 2px;
+    float:left;
+    list-style: none;
+    }
+   ul li a {
+    display:block;
+    float:left;   
+    width:100px;
+   
+    text-decoration:none;
+    padding:5px;
+    color:black;
+    text-align: end;
+
+    }
+
+.hebergements{
+ display: flex;
+justify-content: left;
+ background-color: crimson;
+ width: 600px;
+height: 300px;
+ margin: 16px;
+
+}
+.hebergement ul{
+  width: 300px;
+
+}
+.polulaires{
+  width: 1200;
+  padding: 50px 50px;
+  margin: 16px 05px;
+
+
+}
+.activités{
+  flex-flow: column;
+  width: 1200px;
+  background: green;
+  height: 50px;
+}
+.activités img{
+  width: 0.3px;
+  height: 0.1px;
+  }
+
+/*--------------------footer*-------------------------------
+.A_propos{
+  justify-content: start;
+}
+
+
