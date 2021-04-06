@@ -2,35 +2,76 @@
   font-family: Raleway;
   src: url(https://www.fontsquirrel.com/fonts/raleway) format('ttf')
 }
+
+/*===========================Balise de base==========================*/
 body{
   padding: 0;
   margin: 0px;
   width: 100%;
+  font-family: raleway;
 }
+/*===========================HEADER==========================*/
 header{
   width: 100%;
- 
-  display:flex;
-  justify-content: space-between;
-height: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: hotpink;
 
 }
-#bloc_page{
-  width: 1200px;
 
- display: flex;
-  justify-content: space-between;
-  background-color: aqua;
- 
-}
-.Menu{
-  margin: 1px;
+
+#bloc_header{
+width: 1200px;
 display: flex;
-padding-top: 1px ;
+justify-content: space-between;
+background-color: aqua;
+ 
+}
 
-  justify-content: flex-end;
+#reservia_logo{
+height: 50px;
+}
+.Menu_header{
+ 
 
 }
+
+
+.Menu_header > ul{
+height: 50px;
+margin: 0px;
+padding: 0;
+display: flex;
+width: 500px;
+justify-content: space-around;
+background-color: chocolate;
+
+}
+
+.Menu_header > ul >li{
+height: 50px;
+width: auto;
+display: flex;
+align-items: center;
+}
+
+.menu_header > ul > li a{
+text-decoration: none;
+color: gray;
+border-top: solid 2px white;
+height: 50px;
+line-height: 50px;
+}
+
+
+.menu_header > ul > li > a:hover{
+  color: black;
+  border-top: solid 2px rgb(108, 197, 226);
+}
+
+
+
 #content{
   background-color: green;
   margin: 0px;
@@ -123,7 +164,7 @@ ul {
     list-style: none;
     }
    ul li a {
-    display:block;
+   
     float:left;   
     width:100px;
    
@@ -172,31 +213,47 @@ height: 300px;
 
 
 @media screen and (max-width:500px){
-
-  #bloc_page{
-  display: block;
-    width: 100%;
+/*=============================HEADER TABLLETTE ET MOBILE===================*/
+  #bloc_header{
+     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-.Menu{
-  justify-content: center;
+.Menu_header{
+  justify-content: 100%;
+  width: 100%;
+}
+.Menu_header > ul{
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 
-.Menu > ul{
-  padding: 0;
-  margin: 0;
-  text-align: center;
+
+
+.Menu_header > ul > li{
+width: 50%;
  
   
 }
+.Menu_header > ul > li:nth-child(3n){
+  display: none;
+}
 
 
-
-
-
-
-
+.Menu_header > ul > li > a{
+  width: 100%;
+  text-align: center;
+  border-top: solid 0px white;p
+  border-bottom: 2px solid rgb(108, 197, 226);
+}
 
 
 
 }
+
+
+
+
+
