@@ -17,6 +17,7 @@ header{
   display: flex;
   justify-content: center;
   background-color: hotpink;
+ 
 
 }
 
@@ -32,28 +33,24 @@ background-color: aqua;
 #reservia_logo{
 height: 50px;
 }
-.Menu_header{
- 
-
-}
 
 
 .Menu_header > ul{
-height: 50px;
-margin: 0px;
-padding: 0;
-display: flex;
+
+align-items: center;
 width: 500px;
-justify-content: space-around;
+justify-content: flex-end;
 background-color: chocolate;
+list-style: none;
 
 }
 
 .Menu_header > ul >li{
-height: 50px;
+  
 width: auto;
-display: flex;
+justify-content: flex-end;
 align-items: center;
+list-style: none;
 }
 
 .menu_header > ul > li a{
@@ -62,12 +59,15 @@ color: gray;
 border-top: solid 2px white;
 height: 50px;
 line-height: 50px;
+justify-content: flex-end;
+list-style: none;
 }
 
 
 .menu_header > ul > li > a:hover{
   color: black;
   border-top: solid 2px rgb(108, 197, 226);
+  justify-content: center;
 }
 
 
@@ -148,26 +148,20 @@ img {
 
   
 }
-nav{
 
-  justify-content: flex-start;
-  flex-direction: column;
-}
 
-ul {
- 
- 
-   }
    li {
-    margin: left 2px;
+   
     float:left;
     list-style: none;
+    flex-wrap: wrap;
     }
    ul li a {
    
     float:left;   
     width:100px;
-   
+    list-style: none;
+    flex-wrap: wrap;
     text-decoration:none;
     padding:5px;
     color:black;
@@ -222,11 +216,14 @@ height: 300px;
   }
 .Menu_header{
   justify-content: 100%;
+  flex-wrap: wrap;
   width: 100%;
 }
 .Menu_header > ul{
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  
 }
 
 
@@ -234,17 +231,18 @@ height: 300px;
 
 .Menu_header > ul > li{
 width: 50%;
- 
+flex-wrap: wrap;
   
 }
 .Menu_header > ul > li:nth-child(3n){
-  display: none;
+
 }
 
 
 .Menu_header > ul > li > a{
   width: 100%;
   text-align: center;
+  flex-wrap: wrap;
   border-top: solid 0px white;p
   border-bottom: 2px solid rgb(108, 197, 226);
 }
