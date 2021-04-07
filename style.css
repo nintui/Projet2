@@ -18,7 +18,6 @@ header{
   justify-content: center;
   background-color: hotpink;
  
-
 }
 
 
@@ -70,15 +69,20 @@ list-style: none;
   justify-content: center;
 }
 
-
+/*=================================section content====================================*/
 
 #content{
   background-color: green;
   margin: 0px;
-  min-height: auto;
-  width: 870px;
+
+
+ 
+
  
 }
+
+
+
 
 
 .blocMarseille{
@@ -96,14 +100,29 @@ justify-content: left;
 background-color: yellow;
 }
 
-
-.blocFiltre{
+/*=====================Filtres=================*/
+.blocFiltres{
   background-color: bisque;
-width: 900px;
-justify-content: space-around;
-  display: flex;
- 
+
+list-style: none;
+ float: none;
+ justify-content: flex-end;
+ flex-wrap: wrap;
 }
+.blocFiltres ul{
+  list-style: none;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+
+
+.blocFiltres > ul > li{
+  list-style: none;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+/*===========================hébergements=============*/
 #hebergements{
   background-color: indianred;
   display:flex;
@@ -142,10 +161,6 @@ img {
 /*---------------------header*------------------------*/
 
 
- 
-
-
-
   
 }
 
@@ -159,7 +174,7 @@ img {
    ul li a {
    
     float:left;   
-    width:100px;
+    width: 100px;0px;
     list-style: none;
     flex-wrap: wrap;
     text-decoration:none;
@@ -200,10 +215,10 @@ height: 300px;
   height: 0.1px;
   }
 
-/*--------------------footer*-------------------------------
+/*--------------------footer*-------------------------------*/
 .A_propos{
   justify-content: start;
-}*/
+}
 
 
 @media screen and (max-width:500px){
