@@ -73,7 +73,11 @@ list-style: none;
 
 #content{
   background-color: green;
+
+  width: 100%;
   margin: 0px;
+ 
+ 
 
 
  
@@ -101,55 +105,83 @@ background-color: yellow;
 }
 
 /*=====================Filtres=================*/
-.blocFiltres{
+#blocFiltres{
   background-color: bisque;
+  display: flex;
+width: 500px;
+align-items: center;
+display: flex;
+justify-content: flex-end
 
-list-style: none;
- float: none;
- justify-content: flex-end;
- flex-wrap: wrap;
+
+ 
+
 }
-.blocFiltres ul{
-  list-style: none;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+.blocFiltres p{
+  justify-content: space-between;
+ width:0px;
+  padding: 0px 10px;
+  
+
+}
+
+.blocFiltres > p > ul{
+justify-content: space-around;
+
+
+
+
+  
+ 
 }
 
 
 
-.blocFiltres > ul > li{
+.blocFiltres ul > li{
+
+  
   list-style: none;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  
 }
 /*===========================hébergements=============*/
 #hebergements{
   background-color: indianred;
   display:flex;
+ 
+
+justify-content: space-around;
   flex-wrap: wrap;
-  align-content:flex-end;
-  width: 700px;
+
+  width: 70%;
  
 
 }
  
   
  
+h3{
+height: 5px;
+
+}
+#hebergements img{
+
+  height: 70px;
+  border-radius: 4px;
+}
 
 
-
-
-
+/**
 .blockhebergement{
   background-color: blueviolet;
 
   flex-wrap: wrap;
-align-content: flex-end;
+  align-content: flex-end;
 }
 .blockhebergement  div{
 display:flex;
-  flex-direction: column;
+  
   background-color: coral;
+  width: 550px;--*/
 }
 
 /*--------------arrondi image*----------------------*/
@@ -183,7 +215,7 @@ img {
     text-align: end;
 
     }
-
+/*
 .hebergements{
  display: flex;
 justify-content: left;
@@ -196,14 +228,56 @@ height: 300px;
 .hebergement ul{
   width: 300px;
 
+}--*/
+
+/*===========================Les plus populaires=============*/
+
+#populaires{
+
+  width:30%;
+padding-right: 0px;
+  margin-left: 0px;
+  float: right;
+ 
+
+  /*--
+  display:flex;
+ width:300px;
+
+ justify-content: flex-end;
+  
+--*/
 }
-.polulaires{
+/*
+.aside{
+
+  
+  display: flex;
+  justify-items: left;
+  width:300px;
+  height: 300px;*/
+}
+
+#hebergements_populaires{
+  display: flex;
+
+  width:100%;
+}
+
+#populaires > img{
+  width:20px;
+height: 20px;
+border-radius: 4px;
+  /*
   width: 1200px;
   padding: 50px 50px;
   margin: 16px 05px;
-
+*/
 
 }
+
+
+/**
 .activités{
   flex-flow: column;
   width: 1200px;
@@ -240,7 +314,6 @@ height: 300px;
   flex-wrap: wrap;
   
 }
-
 
 
 
