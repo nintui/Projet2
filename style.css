@@ -1,345 +1,479 @@
 @font-face{
-  font-family: Raleway;
-  src: url(https://www.fontsquirrel.com/fonts/raleway) format('ttf')
-}
-
-/*===========================Balise de base==========================*/
-body{
-  padding: 0;
-  margin: 0px;
-  width: 100%;
-  font-family: raleway;
+  font-family: "Raleway";
+  src: url("/typo/Raleway-Regular.ttf") format('truetype');
 }
 /*===========================HEADER==========================*/
-header{
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  background-color: hotpink;
- 
-}
-
-
-#bloc_header{
+header > div{
 width: 1200px;
+background-color: yellow;
+display: flex;
+height: 109px;
+padding: 0px;
+  color:black;
+}
+#bloc_header > div{
+height: 109px;
+width: 1200px;
+height: 50px;
+}
+#reservia_logo >.logo{
+margin: 0px;
+ padding-left: 0px;
+ width: 110px;
+}
+#reservia_logo{
+  width: 1200px;
+  height: 109px;
+  margin:30px 0px 30px 0px;
+  background-color: pink;
+}
+#reservia_logo >   #Menu_header{
+width: 107px;
+padding-left: 0px;
+text-decoration: none;
+font-weight: lighter;
+display: flex;
+  justify-content: space-between;
+}
+#reservia_logo img{
+height: 50px;
+margin:0px;
+padding-left: 0px;
+}
+.logo >div{
+margin: 0px;
+padding:0px; 
+}
+#Menu_header > div{
+background-color: red;
+width:300px;
+height: 25px;
+padding: 40px 0px 40px 0px;
+margin: 5px 2px 0px 500px;
+display: flex;
+font-size: 100%;
+justify-content:space-around;
+ }
+.Menu >div >a{
+background-color: white;
+padding-right: 30px;
+text-decoration:none;
+display: flex;
+justify-content: flex-end;
+}
+#reservia_logo{
+width: 600px;
+}
+#Menu_header > .logo{
 display: flex;
 justify-content: space-between;
-background-color: aqua;
- 
 }
-
-#reservia_logo{
-height: 50px;
+.logo{
+height:50px;
+padding: 0px 20px 0px 0px;
+font-size: 80%;
+ background-color: blue;
 }
-
-
-.Menu_header > ul{
-
-align-items: center;
-width: 500px;
-justify-content: flex-end;
-background-color: chocolate;
-list-style: none;
-
-}
-
-.Menu_header > ul >li{
-  
-width: auto;
-justify-content: flex-end;
-align-items: center;
-list-style: none;
-}
-
-.menu_header > ul > li a{
-text-decoration: none;
-color: gray;
-border-top: solid 2px white;
-height: 50px;
-line-height: 50px;
-justify-content: flex-end;
-list-style: none;
-}
-
-
-.menu_header > ul > li > a:hover{
-  color: black;
-  border-top: solid 2px rgb(108, 197, 226);
-  justify-content: center;
-}
-
 /*=================================section content====================================*/
-
-#content{
-  background-color: green;
-
-  width: 100%;
-  margin: 0px;
- 
- 
-
-
- 
-
- 
+#section_content{
+background-color: green;
+width:1200px;
 }
+/*=================================section bannière==============================*/
+.bannière{
+background-color: cornflowerblue;
+width:1200px;
+height:300px;
+}
+/*==========================slogan======================*/
+.slogan >div{
+height: 30px;
+font-size: 30px;
+}
+.bannière >.slogan h3{
+width: 572px;
+height: 45px;
+font-size: 20px;
+}
+.bannière> .slogan  p{
+background-color: yellow;
+width: 320px;
+height: 33px;
+ font-size: 15px;
+ width: 2px 10px 10px 0px;
+ margin-top: 5px;
+}
+/*==========================recherche======================*/
+#recherche{
+padding: 20px 0px;
+background-color:red;
+ margin-bottom: 10px;
+ width:1200px;
+ height: 56px;
 
-
-
-
-
-.blocMarseille{
-  width: 1px;
-  padding: 0px;
-  display: flex;
-  justify-content: space-between;
-
+}
+input >.cherche{
+  font-weight: bold;
+}
+#Map{
+height: 50px;
+background-color: lightslategray;
+width: auto;
+display: flex;
+background-color: silver;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+#MapMarseille{
+border: solid 1px silver;
+}
+.button_add{
+background-color: blue;
+color:white;
+border: 0px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+padding-left:20px;
+padding-right: 20px;
+}
+.iconemap{
+height: 50px;
+width: 50px;
 }
 .MapMarseille{
-  margin: 5px;
-
+margin: 5px;
 padding: 15px;
 justify-content: left;
 background-color: yellow;
 }
-
-/*=====================Filtres=================*/
-#blocFiltres{
-  background-color: bisque;
-  display: flex;
-width: 500px;
-align-items: center;
+ /*==========================filtres======================*/
+.blocFiltres{
+background-color: bisque;
 display: flex;
-justify-content: flex-end
-
-
- 
-
+padding: 0;
+font-size: 18px;
+width: 1000px;
+align-items: center;
+flex-wrap: wrap;
+font-weight: bold;
 }
-.blocFiltres p{
-  justify-content: space-between;
- width:0px;
-  padding: 0px 10px;
-  
-
+.Filtres {
+  background-color: coral;
+  flex-wrap: wrap;
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+  font-size:80%;
+  font-weight: bold;
+  align-items: center;
 }
-
-.blocFiltres > p > ul{
-justify-content: space-around;
-
-
-
-
-  
- 
+.Filtres > div{
+border:1px solid gray;
+border-radius: 20px;
+display: flex;
+flex-wrap: nowrap;
+padding: 5px 10px 5px 45px;
+background-color: white;
+position: relative;
+margin-top: 6px;
+max-height: auto;
+margin-bottom: 10px;
+font-weight: bold;
+font-size: 20px;
+} 
+.Filtres a{
+text-decoration: none;
 }
-
-
-
-.blocFiltres ul > li{
-
-  
-  list-style: none;
-  
+.Filtres  .icone{
+height: 35px;
+width: 35px;
+border-radius: 50%;
+background-color: lightblue;
+position: absolute;
+font-size:80%;
+top: -2px;
+left: -1.5px;
+}
+/*==========================info=====================*/
+.blocinfo >div{
+background-color: blueviolet;
+width:400px;
+height: 40px;
+padding-left: 5px;
+margin-left: 40px;
+margin-bottom: 0px;
+}
+.blocinfo .info{
+  padding-left: 10px;
+margin-bottom: 0px;
+}
+.blocinfo,  .icone {
+width:40px;
+border-radius: 50%;
+background-color: lightblue;
+}
+ .blocinfo, p{
+font-size: 15px;
+ }
+/*==========================#hebergements_populaires============*/
+#hebergements_populaires{
+height:681px;
+width: 1200px;
+background-color: lawngreen;
+display: flex;
 }
 /*===========================hébergements=============*/
-#hebergements{
-  background-color: indianred;
-  display:flex;
- 
-
-justify-content: space-around;
-  flex-wrap: wrap;
-
-  width: 70%;
- 
-
+.section_hebergements{
+background-color:lime
 }
- 
-  
- 
-h3{
-height: 5px;
-
+.Marseille {
+  margin: 0px 10px 0px 0px;
+  background-color: gray;
 }
-#hebergements img{
-
-  height: 70px;
-  border-radius: 4px;
-}
-
-
-/**
-.blockhebergement{
-  background-color: blueviolet;
-
-  flex-wrap: wrap;
-  align-content: flex-end;
-}
-.blockhebergement  div{
-display:flex;
-  
-  background-color: coral;
-  width: 550px;--*/
-}
-
-/*--------------arrondi image*----------------------*/
-img {
-  border-radius: 4px;
-
-}
-
-/*---------------------header*------------------------*/
-
-
-  
-}
-
-
-   li {
-   
-    float:left;
-    list-style: none;
-    flex-wrap: wrap;
-    }
-   ul li a {
-   
-    float:left;   
-    width: 100px;0px;
-    list-style: none;
-    flex-wrap: wrap;
-    text-decoration:none;
-    padding:5px;
-    color:black;
-    text-align: end;
-
-    }
-/*
-.hebergements{
- display: flex;
-justify-content: left;
- background-color: crimson;
- width: 600px;
-height: 300px;
- margin: 16px;
-
-}
-.hebergement ul{
-  width: 300px;
-
-}--*/
-
-/*===========================Les plus populaires=============*/
-
-#populaires{
-
-  width:30%;
-padding-right: 0px;
-  margin-left: 0px;
-  float: right;
- 
-
-  /*--
-  display:flex;
- width:300px;
-
- justify-content: flex-end;
-  
---*/
-}
-/*
-.aside{
-
-  
-  display: flex;
-  justify-items: left;
-  width:300px;
-  height: 300px;*/
-}
-
-#hebergements_populaires{
-  display: flex;
-
-  width:100%;
-}
-
-#populaires > img{
-  width:20px;
-height: 20px;
-border-radius: 4px;
-  /*
-  width: 1200px;
-  padding: 50px 50px;
-  margin: 16px 05px;
-*/
-
-}
-
-
-/**
-.activités{
-  flex-flow: column;
-  width: 1200px;
-  background: green;
-  height: 50px;
-}
-.activités img{
-  width: 0.3px;
-  height: 0.1px;
-  }
-
-/*--------------------footer*-------------------------------*/
-.A_propos{
-  justify-content: start;
-}
-
-
-@media screen and (max-width:500px){
-/*=============================HEADER TABLLETTE ET MOBILE===================*/
-  #bloc_header{
-     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-.Menu_header{
-  justify-content: 100%;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.Menu_header > ul{
-  width: 100%;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  
-}
-
-
-
-.Menu_header > ul > li{
-width: 50%;
+.hebergements {
+background-color: crimson;
+display: flex;
+justify-content:inherit;
 flex-wrap: wrap;
-  
+height:600 px;
+height:550px;
 }
-.Menu_header > ul > li:nth-child(3n){
-
+.section_hebergements, .hebergements> figure >img {
+height: 112px;
+width: 243px;
+margin: 0px;
 }
+.section_hebergements, .hebergements> figure {
+height: 150px;
+background-color: green;
+width: 200px;
+}
+.section_hebergements {
+height:681px;
+width: 960px;
+margin-left:0px;
+margin-right: 0px;
+padding: 0px;
+background-color:lime
+}
+.afficher >a{
+text-decoration: none;
+}
+/*===========================Les plus populaires=============*/
+.section_populaires{
+width: 492px;
+background-color:yellow;
+height: 550px;
+margin:0px;
+}
+.populaires {
+background-color: gray;
+margin: 0px 10px 0px 0px;
+}
+.populairesMarseille{
+background-color: pink;
+margin: 0px ;
+width:492px;
+height: 550px;
+}
+.populairesMarseille, img{
+height: 132px;
+width: 124px;
+border-radius: 10px;
+float: left;
+} 
+.populairesMarseille figure{
+padding: 0px;
+margin-inline-start: 0px;
+}
+.populairesMarseille figcaption{
+height: 100px;
+width: 280px;
+padding-left: 0px;
+}
+/*------------------Section activités-----------------*/
+#section_activités {
+width: 1200px;
+height: 600px;
+background-color:yellow;
+}
+.activités{
+  background-color: pink;
+width:1200px;
+margin-top: 10px;
+margin-left: 0px;
+display: flex;
+margin: 0px;
+}
+.activitésMarseille{
+width: 1200px;
+background-color: brown;
+height: 500px;
+flex-direction:column;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+.activitésMarseille>figure{
+background-color: green;
+margin-left:0px;
+margin-right: 0px;
+}
+.vieuxport> img{
+height: 393px;
+width: 303px;
+margin-left:0px;
+}
+.vieuxport, figure{
+height:446px;
+width: 303px;
+}
+.fortdePomègues >img{
+height: 184px;
+width: 301px;
+}
+.fortdePomègues,figure{
+height: 234px;
+width: 301px;
+}
+.IlesduFrioul> img{
+height: 107px;
+width: 301px;
+margin-top: 5px;
+}
+.IlesduFrioul, figure  {
+height: 180px;
+}
+.ParcNationaldesCalanques >img{
+height: 393px;
+width: 303px;
+}
+.ParcNationaldesCalanques, figure{
+height:446px;
+width: 303px;
+}
+.NotreDamedelaGarde> img{
+width: 304px;
+height: 140px;
+}
+.NotreDamedelaGarde, figure{
+width: 25px;
+height: 160px;
+}
+.ParcLonchamp >img{
+width: 304px;
+height: 150px;
+}
+/*--------------------footer*-------------------------------*/
+footer{
+width: 1200px;
+background-color:yellow;
+display: flex;
+justify-content: space-between;
+}
+footer >div{
+width: 1100px;
+background-color: grey;
+}
+.A_propos{
+align-items: flex-start;
+margin-right: 2px;
+font-size: 80%;
+left: 0px;
+height:100px;
+background-color:red;
+}
+.Assistance{
+align-items: flex-start;
+margin-right: 2px;
+font-size: 80%;
+left: 0px;
+height:100px;
+background-color:red;
+}
+.Nos_hébergements{
+align-items: flex-start;
+margin-right: 2px;
+font-size: 80%;
+left: 0px;
+height:100px;
+background-color:red;
+}
+@media screen and (max-width:700px){
+/*=============================HEADER TABLLETTE ET MOBILE===================*/
 
-
-.Menu_header > ul > li > a{
+body{
+  justify-content: center;
+  display: flex;
   width: 100%;
-  text-align: center;
+ 
+  }
+
+  #bloc_header{
+    
+    justify-content:center;
+    display: flex;
+   width: 80%;
+flex-wrap: wrap;
+}
+.Menu_header{
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  border-top: solid 0px white;p
-  border-bottom: 2px solid rgb(108, 197, 226);
+  width: 80%;
+  flex-wrap: wrap;
+  }
+
+.Menu{
+  width: 100%;
+text-align: center;
+flex-wrap: wrap;
+border-top: solid 0px white;
+border-bottom: 2px solid rgb(108, 197, 226);
+}
+#reservia_logo{
+  text-align: center;
+flex-wrap: wrap;
+width:100px;
+}
+/*
+body{
+justify-content: center;
+display: flex;
+width: 100%;
 }
 
-
-
+#bloc_header{
+width: 80%;
+margin: 1em 1em;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
 }
-
-
-
-
-
+.Menu_header{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+width: 100%;
+}
+.Menu_header > a{
+width: 100%;
+text-align: center;
+flex-wrap: wrap;
+border-top: solid 0px white;
+border-bottom: 2px solid rgb(108, 197, 226);
+}
+#section_content{
+flex-wrap: wrap;
+width: 100%;
+justify-content: center;
+margin: 0px;
+height: 800px;
+}
+footer{
+margin-top: 5px;
+margin-left: 0px;
+width:1200px;
+display: flex;
+justify-content: space-between;
+}
