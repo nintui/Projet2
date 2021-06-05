@@ -4,7 +4,7 @@
 }
 /*===========================body==========================*/
 body{
-   font-family: Raleway-Regular, serif;
+   font-family: Raleway, serif;
 }
 /*===========================HEADER==========================*/
 header{
@@ -187,6 +187,9 @@ visibility: hidden;
   color: black;
   font-size: 15px;
 }
+.Filtres :hover{
+  background-color:rgb(224, 216, 216);
+}
 .Filtres .icone{
   height: 30px;
   width: 30px;
@@ -256,8 +259,7 @@ visibility: hidden;
   height: auto;
   width: 100%;
   margin-right: 2%;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+
 }
 /*===========================section hébergements=============*/
 .section_hebergements {
@@ -278,24 +280,19 @@ visibility: hidden;
 span{
   color: blue;
 }
-.hebergements figcaption{
-  background-color: white;
-  font-size: 14px;
-  padding-left: 8px;
-  border-radius: 0px 0px 20px 20px;
-}
 .fighébergements{
   font-size: 14px;
   padding-left: 8px;
+  border-radius: 20px;
 }
-.hebergements{
+ .hebergements{
   padding: 5px;
   background-color: white;
   border-radius: 20px;
   margin-bottom: 40px;
 }
-.hebergements> img{
-  border-radius: 20px 20px 0px 0px;
+.hebergements img{
+border-radius: 20px 20px 0px 0px;
 }
 .afficher{
   padding-top: 0px;
@@ -322,15 +319,15 @@ aside{
   justify-content: space-between;
   padding-left: 5px;
   border-radius: 20px;
-  width: 70%;
+  width: 100%;
 }
 .populairesicone {
   width: 40px;
   height: 30px;
   display: flex;
   align-items: center;
-  margin-top:8px ;
-  font-size: 20px;
+  margin-top:15px ;
+  font-size: 30px;
 }
 .populairesMarseille{
   width: 90%;
@@ -338,8 +335,8 @@ aside{
 }
 .les_plus_populaires{
   width: 40%;
-  height: 80%;
-  padding-top: 20px;
+
+ 
   padding-right: 20%;
 }
 .Marseille {
@@ -348,7 +345,7 @@ margin-left: 5%;
 border-radius: 20px;
 }
 .Marseille img{
-  width: 35%;
+  width: 80%;
   padding: 5px;
   border-radius: 15px 0px 0px 15px;
 }
@@ -367,7 +364,7 @@ border-radius: 20px;
 .section_activités {
   background-color: rgb(242, 242, 242);
   padding-left: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-top: 0px;
 }
 .titre_activités{
@@ -614,6 +611,7 @@ margin-left: 5px;
   margin-right: 0%;
   margin-right: 2%;
 }
+
 .A_propos{
   padding-left: 0px;
 }
