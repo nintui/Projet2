@@ -2,65 +2,67 @@
   font-family: "Raleway";
   src: url("/typo/Raleway-Regular.ttf") format('truetype');
 }
+@font-face{
+  font-family:"Raleway-Bold";
+  src: url("/typo/Raleway-Regular.ttf") format('truetype');
+}
 /*===========================body==========================*/
 body{
    font-family: Raleway, serif;
 }
 /*===========================HEADER==========================*/
+header, .Menu{
+  display:flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
 header{
   height: auto;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
 }
 .logo{
   width : 140px;
   height: 80px;
  }
+li{
+  list-style: none;
+}
 .Menu{
-  display: flex;
-  height: auto;
+  height: 100%;
   align-items: center;
   width: auto;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-right: 25px;
+  color:#0065FC;
+  font-weight: bolder;
+}
+nav li{
+  margin-right: 25px;
 }
 .menuhebergements{
-  height: auto;
-  width: 100%;
-  align-items: center;
-  text-decoration: none;
-  margin-right: 30px;
-  color: blue;
+  text-align: center;
+  height: 50px;
+  padding-top: 26px;
+ margin-left: -40px;
+color: #DEEBFF;
 }
-.menuhebergements>a{
-  text-decoration: none;
-  font-size: 50%;
+.menuhebergements>a:hover{
+  border-top: solid #0065fc;
+  padding-top: 20px;
+  color:#0065FC;
 }
-.Menu a{
-  font-size: 20px;
-  text-decoration: none;
- }
-.menuinscriptionmobile{
-  display: none;
- }
 .menuactivites{
-  align-items: center;
-  width: 100%;
   margin-right: 30px;
-  color: black;
+  color: #DEEBFF;
 }
-.menuactivites>a{
+.Menu>a,.menuhebergements>a, .menuactivites>a, .menuinscription>a{
   list-style: none;
-  color: black;
+  text-decoration: none;
 }
 .menuinscription{
-  align-items: center;
-  width: 100%;
   margin-right: 20px;
-  text-decoration: none;
-}
-.menuinscription>a{
-  text-decoration: none;
+  color: #DEEBFF;
+  font-family: Raleway-Bold;
 }
 .Menu> .menuinscription{
   display: flex;
@@ -68,143 +70,144 @@ header{
 }
 /*================================section content====================================*/
 #section_content{
-  width: 100%;
+  width: auto;
   padding-top: 0px;
   height: auto;
-  margin-right: 10px;
 }
 /*================================section bannière==============================*/
-#section,.bannière{
+#section,.banniere{
   padding-top: 0px;
   margin-top:0px;
   width: 100%;
   height: auto;
 }
-.bannière{
+.banniere{
   font-weight: lighter;
 }
 .center{
  margin-left: 0px;
 }
-form{
+form, h2, #MapMarseille, .button_add{
   width: auto;
-  height: 59px;
+}
+form{
   display: flex;
+  height: 59px;
 }
 h2{
   height: auto;
-  width: auto;
   font-size: 1.3em;
+  font-family: Raleway-Bold;
+  
+}
+#recherche, .iconerecherche{
+  display: flex;
+  align-items: center;
+  height: 50px;
 }
  #recherche{
-  height: 50px;
   padding: 20px 0px;
-  display: flex;
-  width: 100%;
   justify-content: stretch;
   margin-left: 0px;
   font-weight:bold;
-  align-items: center;
  }
  .iconerecherche {
-  height: 37px;
-  border-radius: 30% 0% 0% 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color:rgb(245, 245, 245);
-  width: 35px;
-  margin-right: 0px;
-  font-size: 30px;
-
+   justify-content: center;
+   background-color:#F2F2F2;
+   width: 50px;
+   border-radius: 15px 0px 0px 15px;
+   margin-right: 0px;
+   font-size: 30px;
  }
  #MapMarseille{
   font-weight: bold;
-  height: 35px;
-  width: auto;
+  height: 43px;
   padding-left: 10px;
-  font-size: 17px;
-  border: solid 0.5px white;
+  font-size: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+
+  border: 4px solid #F2F2F2;
 }
 .button_add{
   background-color: #0065FC;
   color:white;
   font-size: 17px;
   border: 0px;
-  border-top-right-radius: 22px;
-  border-bottom-right-radius: 22px;
-  height: 39px;
-  width: auto;
-  padding-left: 20px;
+  border-top-right-radius: 19px;
+  border-bottom-right-radius: 19px;
+  height: 47px;
+  margin-top: 2px;
   padding-right: 20px;
+  margin-left: -70px;
 }
 .iconelocalisation{
 visibility: hidden;
 }
    /*==========================filtres======================*/
+.blocFiltres, .titrefiltres, .Filtres, .Filtres .icone, .Filtresicone{
+    display: flex;
+}
 .blocFiltres{
-  display: flex;
   padding: 0px;
   justify-content:left;
   flex-wrap: wrap;
   font-size: 15px;
   width: 100%;
-  flex-wrap: wrap;
   font-weight: bold;
   color: black;
 }
-.titrefiltres{
-  display: flex;
+.titrefiltres, .Filtres .icone{
   justify-content: center;
+}
+.Filtres, .Filtres > div,.Filtres .icone{
+  align-items: center;
+}
+.titrefiltres{
   margin-top: 0px;
 }
 .Filtres{
   flex-wrap: wrap;
-  display: flex;
   width: auto;
   justify-content: left;
   font-weight: lighter;
-  align-items: center;
   color: black;
   margin-left: 30px;
 }
 .Filtres > div{
-  border:0.5px solid gray;
-  display: flex;
-  align-items: center;
+  border:5px solid rgb(245, 245, 245);
   padding: 5px 10px 5px 30px;
   position: relative;
   justify-content: space-around;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   height:auto;
   width:auto;
-  margin-left: 30px;
+  font-weight: lighter;
+  margin-left: 25px;
+  margin-right: 60px;
   border-radius: 20px;
 } 
 .Filtres a{
   text-decoration: none;
   color: black;
-  font-size: 15px;
+  font-weight: bold;
+  font-size: 18px;
 }
 .Filtres :hover{
-  background-color:rgb(224, 216, 216);
+  background-color:#F2F2F2;
 }
 .Filtres .icone{
   height: 30px;
   width: 30px;
+  font-size: 50%;
   border-radius: 50%;
   background-color: lightblue;
   position: absolute;
-  display: flex;
   color: #0065FC;
-  align-items: center;
-  justify-content: center;
   margin-right: 30px;
   left: -5px;
 }
 .Filtresicone{
-  display: flex;
   justify-content: space-around;
   border-radius: 15% 0% 0% 15%;
   height: 50px;
@@ -213,26 +216,24 @@ visibility: hidden;
   font-size: 60%;
 }
 /*==========================info=====================*/
-.blocinfo{
+.blocinfo, .info, .info> h3, .infoicone {
   display: flex;
-  font-size: 19px;
   align-items: center;
+}
+.blocinfo{
+  font-size: 19px;
  }
 .blocinfo >div{
   justify-content: space-around;
   width: auto;
 }
  .info{
-  display: flex;
   flex-wrap: nowrap;
-  align-items: center;
   padding: 5px;
   width: 100px;
  }
 .info> h3 {
   height: 40px;
-  display: flex;
-  align-items: center;
   padding-top: 5px;
   margin-left: 15px;
   font-weight: lighter;
@@ -242,8 +243,6 @@ visibility: hidden;
   height: 30px;
   width: 30px;
   padding-top: 2px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   font-weight: lighter;
   border-radius: 50%;
@@ -258,41 +257,46 @@ visibility: hidden;
   justify-content: space-between;
   height: auto;
   width: 100%;
-  margin-right: 2%;
-
 }
 /*===========================section hébergements=============*/
 .section_hebergements {
   padding-bottom: 20px;
-  background-color: rgb(242, 242, 242);
+  background-color: #F2F2F2;
   margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 20px;
+  margin-right: 30px;
+}
+.section_hebergements, .fighebergements, .hebergements{
+  border-radius: 20px; 
 }
 .titrehebergements{
   margin-left: 30px;
 }
+.titrepopulaires{
+  margin-left: 10px;
+    }
 .hebergements_Marseille{
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
-span{
-  color: blue;
-}
-.fighébergements{
-  font-size: 14px;
+.fighebergements{
+  font-size: 16px;
   padding-left: 8px;
-  border-radius: 20px;
 }
  .hebergements{
   padding: 5px;
+  margin-right: 20px;
   background-color: white;
-  border-radius: 20px;
   margin-bottom: 40px;
+}
+figcaption p{
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 .hebergements img{
 border-radius: 20px 20px 0px 0px;
+width: 100%;
+margin-bottom: 10px;
 }
 .afficher{
   padding-top: 0px;
@@ -310,12 +314,15 @@ border-radius: 20px 20px 0px 0px;
 aside{
   width: 50%;
   padding-bottom: 0px;
-  background-color: rgb(242, 242, 242);
+  background-color: #F2F2F2;
   border-radius: 20px;
+
+}
+.populaires, .populairesicone, .Marseille, figure img figcaption {
+  display: flex;
 }
 .populaires{
   flex-wrap: wrap;
-  display: flex;
   justify-content: space-between;
   padding-left: 5px;
   border-radius: 20px;
@@ -324,142 +331,125 @@ aside{
 .populairesicone {
   width: 40px;
   height: 30px;
-  display: flex;
   align-items: center;
   margin-top:15px ;
   font-size: 30px;
 }
-.populairesMarseille{
-  width: 90%;
-  border-radius: 20%;
+.les_plus_populaires p{
+  padding-bottom: 15px;
+  padding-top: 5px;
 }
-.les_plus_populaires{
-  width: 40%;
 
- 
-  padding-right: 20%;
+span{
+  color: #0065FC;
 }
-.Marseille {
-margin-right: 5%;
-margin-left: 5%;
-border-radius: 20px;
+span .etoile{
+  margin-top: 30px;
 }
+
 .Marseille img{
-  width: 80%;
   padding: 5px;
   border-radius: 15px 0px 0px 15px;
 }
-.Marseille, figure img figcaption {
-  display: flex;
+.Marseille{
   justify-content: space-between;
-  padding-top: 0px;
-  margin-right: 20px;
+  padding: 0px;
   background-color: white;
-  width: 100%;
+  margin-left: 10px;
+  border-radius: 20px;
   margin-bottom: 70px;
-  padding-left: 0px;
   font-size: 14px;
+  width: auto;
+}
+.Marseille p{
+width: 150px;
+font-size: 17px;
+margin-right: 30px;
+
 }
 /*------------------Section activités-----------------*/
-.section_activités {
-  background-color: rgb(242, 242, 242);
+.section_activites {
   padding-left: 0px;
   margin-bottom: 30px;
   margin-top: 0px;
 }
-.titre_activités{
+.titre_activites{
   width:auto;
   font-size: 20px;
   font-weight: bolder;
-  background-color: rgb(242, 242, 242);
+  margin-left: 20px;
+  padding-top: 20px;
 }
-.activitésMarseille{
-  background-color: rgb(242, 242, 242);
+.activitesMarseille{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 20px;
 }
 .Vieuxport{
   background-color:white;
   width: 270px;
-  border-radius:20px;
   margin-left: 10px;
   margin-right: 20px;
   box-shadow: 0px 10px 10px grey;
   height: 100%;
+}
+.Vieuxport, .figvieuxport, .Vieuxportmini, .FortdePomegues_IlesduFrioul div, .FortdePomegues, .Iles_du_Frioul, .ParcNationaldesCalanques{
+  border-radius: 20px;
 }
   .Vieuxport img{
     width: 270px;
     height: 100%;
     border-radius: 20px 20px 0px 0px;
 }
-.figvieuxport{
+.figvieuxport, .figportdespomegues,.figilesdufrioul, .figparcnationaldescalanques, .fignotredame, .figparcLongchamp, .figparcnationaldescalanques{
   background-color: white;
+}
+.figvieuxport{
    width: auto;
   height: 25px;
   padding: 10px;
-  border-radius: 20px;
  }
 .Vieuxportmini{
   display: none;
-  width: 233px;
-  border-radius:20px;
   margin-left: 0px;
   margin-right: 4px;
 }
-.FortdePomègues_IlesduFrioul div{
-  background-color: rgb(253, 253, 253);
+.FortdePomegues_IlesduFrioul div{
   width:300px;
   display: flex;
-  border-radius: 20px;
   flex-wrap: wrap;
-  background-color: rgb(242, 242, 242);
   height: 100%;
   padding-left: 0px;
   margin-right: 0px;
 }
- .FortdePomègues_IlesduFrioul img{
+ .FortdePomegues_IlesduFrioul img{
   border-radius: 20px 20px 0px 0px;
   height: 150px;
   width: 100%;
 }
-.FortdePomègues {
+.FortdePomegues, .Iles_du_Frioul {
   margin-left: 0px;
-  background-color: rgb(242, 242, 242);
-  border-radius: 20px 20px 20px 20px;
-}
-.Iles_du_Frioul{
-  margin-left: 0px;
-  background-color: rgb(242, 242, 242);
   border-radius: 20px;
 }
 .Iles_du_Frioul img{
   height: 135px;
 }
-.figportdespomegues{
-  background-color: white;
-  margin-left: 0px;
-  height: 20px;
-  background-color: rgb(242, 242, 242);
+.figportdespomegues, .figilesdufrioul{
   width: auto;
+  padding: 10px 0px 10px 10px;
   box-shadow: 0px 10px 10px grey;
-  border-radius: 0px 0px 20px 20px ;
-  padding: 10px 0px 10px 10px;
-}
-.figilesdufrioul{
-  padding: 10px 0px 10px 10px;
   height: 20px;
-   box-shadow: 0px 10px 10px grey;
-  width: auto;
   border-radius: 0px 0px 20px 20px;
 }
+.figportdespomegues{
+  margin-left: 0px;
+}
 .ParcNationaldesCalanques{
-  background-color:white;
   width:270px;
   margin-right: 0px;
   height: 100%;
   margin-left: 0px;
-  border-radius: 20px;
   box-shadow: 0px 10px 10px grey;
 }
 .ParcNationaldesCalanquesmini{
@@ -472,7 +462,7 @@ border-radius: 20px;
   margin-left: 0px;
   display: none;
   border-radius: 20px;
-  box-shadow: 0px 10px 10px grey;
+
   height: 100%;
 }
 .ParcNationaldesCalanques img{
@@ -490,20 +480,17 @@ border-radius: 20px;
 }
 .figparcnationaldescalanques{
   padding-left: 10px;
-  background-color: rgb(242, 242, 242);
   height: 20px;
   margin-top: 0px;
   padding-top: 10px;
   display: flex;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   border-radius: 0px 0px 20px 20px;
-  background-color:white;
 }
 .NotreDamedelaGarde_ParcLongchamp img{
   flex-wrap: wrap;
   height: 100%;
   border-radius: 20px;
-  background-color: rgb(242, 242, 242);
 }
 .NotreDamedelaGarde_ParcLongchamp>div {
   border-radius: 20px 20px 0px 0px;
@@ -511,11 +498,9 @@ border-radius: 20px;
   overflow: hidden;
 }
 .NotreDamedelaGarde_ParcLongchamp img{
-  background-color: rgb(242, 242, 242);
+
 }
 .NotreDamedelaGarde{
-  background-color: rgb(242, 242, 242);
-  border-radius: 20px;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
@@ -526,7 +511,6 @@ border-radius: 20px;
   height: 135px;
 }
 .ParcLongchamp{
-  border-radius: 20px;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
@@ -540,6 +524,7 @@ border-radius: 20px;
   padding: 10px 0px 10px 10px;
   height: 20px;
   border-radius: 0px 0px 20px 20px;
+  background-color: white;
 }
 .figparcLongchamp{
   box-shadow: 0px 10px 10px grey;
@@ -551,139 +536,428 @@ border-radius: 20px;
   margin-top: 0px;
   padding-left: 10px;
   padding-top: 10px;
+  background-color: white;
 }
 /*--------------------footer*-------------------------------*/
 footer{
-  width: 100%;
+  width: auto;
   height: auto;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(219, 219, 235);
+  background-color: #F2F2F2;
 }
-.compléments{
+.complements{
   width: 90%;
+  margin-left: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   font-size: 15px;
  }
-.A_propos{
-  align-items: flex-start;
-  margin-right: 2px;
+ .A_propos, .Assistance, .Nos_hebergements{
   width: 247px;
-  height: 157px;
-  left: 0px;
-  margin-bottom: 20px;
-}
-.A_propos> h3{
-  font-weight: bolder;
-}
-.Assistance{
-  align-items: flex-start;
-  margin-right: 2px;
-  width: 247px;
-  height: 157px;
-  left: 0px;
-  margin-bottom: 20px;
-}
-.Assistance>h3{
-  font-weight: bolder;
-}
-.Nos_hébergements{
-  align-items: flex-start;
   margin-right: 2px;
   left: 0px;
-  width: 247px;
-  height: 157px;
   margin-bottom: 20px;
-}
-.Nos_hébergements>h3{
+  height: 157px;
+  align-items: flex-start;
+ }
+ .A_propos> h3, .Assistance>h3, .Nos_hebergements>h3 {
   font-weight: bolder;
+ 
 }
 .A_propos, p{
 margin-left: 5px;
 }
-@media screen and (max-width:1200px){
-/*=============================IPAD===================*/
-.hebergements_populaires{
-  flex-direction: column-reverse;
-  height: auto;
-  margin-right: 0%;
-  margin-right: 2%;
-}
+@media screen and (max-width:1300px){
+  /*======================================*/
+ .hebergements{
 
-.A_propos{
+
+ }
+ aside{
+  
+ }
+.Marseille img{
+ 
+
+}
+}
+.Marseille p{
+
+}
+@media screen and (max-width:1200px){
+/*================================================*/
+.section_hebergements{
+  width: 50%;
+
+}
+aside{
+  width: 50%;
+
+}
+.hebergements{
+
+  
+}
+.A_propos, .assistance{
   padding-left: 0px;
 }
-.assistance{
-  padding-left: 0px;
+.hebergements_populaires{
+  width: 100%;
+}
+.section_hebergements{
+  width: 100%;
+}
+.Marseille{
+ 
+}
+.activitesMarseille{
+  display: flex;
+  flex-flow:  wrap;
+}
+.ParcNationaldesCalanques{
+  margin-right: 0px;
+}
+.NotreDamedelaGarde_ParcLongchamp{
+
+}
+}
+@media screen and (max-width:1000px){
+ /*==================================================*/
+.hebergements_populaires{
+    width: 100%;
+    height: auto;
+}
+.section_hebergements{
+  width: 90%;
+} 
+.hebergements{
+  margin-left: 30px;
+  width: 300px;
+}
+aside{
+  width: auto;
+}
+.activitesMarseille{
+  display: flex;
+  flex-flow:  wrap;
 }
 }
 @media screen and (max-width:700px){
-/*============================= TABLLETTE ET MOBILE===================*/
+/*================================================*/
 body{
-  width: 100%;
+  min-width: 335px;
   height: auto;
-  margin:10px;
+}
+/*========header=========*/
+nav {
+ width: 100%;
+}
+.Menu{
+  width: auto;
+  justify-content: space-between;
+  margin-right: 0px;
+  position: relative;
+}
+ul, .Menu, .menuinscription :hover{
+  margin-left: 0px;
+}
+.menuinscription>a:hover{
+  border-top: none;
+}
+.menuinscription{
+  position:absolute;
+  top: -60px;
+  right: 15px;
+  align-items: center;
+}
+.menuhebergements a:hover {
+  border-top: none;
+  border-bottom: solid #0065FC;
+  padding-bottom: 25px;
+  font-family: Raleway-Bold;
+}
+.Menu {
+  border-bottom: solid rgb(243, 236, 236);
 }
 header{
   flex-direction: column;
-  align-items:center;
+  align-items:flex-start;
   height: auto;
   width: 100%;
-  flex-wrap: wrap;
+  min-width: 335px;
 }
 .logo{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  width: 50%;
   height: 100%;
-  margin-top: 0px;
-  align-items: center;
-  flex-wrap: wrap;
+  margin-top: 0px;  
+  margin-bottom: 20px;
 }
-.logo img{
+.logo img, .menuactivites{
   width: auto;
 }
 .Menu{
-  padding-right: 3%;
-}
-.logo > .menuinscriptionmobile{
-  height: 50px;
-  width: auto;
-  display: block;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: 2%;
-  margin-bottom: -15%;
-}
-.menuinscriptionmobile >a{
-  text-decoration: none;
-  font-size: 20px;
-  flex-wrap: wrap; 
-  padding-right: 20px;
+position: relative;
 }
 .Menu>.menuinscription{
   height: auto;
-  display: none;
+  order:-1;
 }
-.menuhebergements{
-  margin-left: 5%;
-  width: auto;
+.Menu .menuhebergements,.menuactivites{
+  font-size: 20px;
 }
 .menuactivites{
-  width: auto;
   margin-right: 10%;
 }
-.menuinscription{
-  margin-right: 0px;
-}
-.bannière, h2> h3 {
+/*================bannière===============*/
+.banniere, h2> h3 {
   font-size: 90%;
 }
+.Filtres, .Filtres>div{
+  margin-left: 0px;
+}
+.Filtres>div{
+  margin-bottom: 20px;
+  margin-right: 25px;
+}
+.Filtres a{
+font-size: 18px;
+}
+/*===================section hébergements====================*/
+.hebergements_populaires{
+  width: 100%;
+}
+.section_hebergements{
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.titrehebergements, .afficher, h3 {
+  margin-left: 15px;
+}
+.hebergements{
+  width: 300px;
+  margin-left: 0px;
+  max-width: 90%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.hebergements img{
+  width: 97%;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.hebergements_Marseille{
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-left: 20px;
+  width: 100%;
+}
+ /*===================aside=============*/
+aside{
+  width: auto;
+  margin-bottom: 30px;
+}
+.Marseille p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.hebergements_populaires{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.section_hebergements{
+  width: 50%;
+}
+.populaires{
+  width: 65%;
+}
+.Marseille{
+  min-width: 300px;
+  width: 80%;
+} 
+.Marseille img{
+  width: 100%;
+}
+.populairesMarseille{
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  padding-right: 0px;
+  margin-left: 10px;
+}
+.les_plus_populaires{
+  margin-left: 20px;
+  font-size: 15px;
+}
+.Marseille{
+  margin-left: 0px;
+  margin-bottom: 140px;
+}
+.Marseille img{
+    margin:5px;
+}
+/*=============section activités=============*/
+.activitesMarseille, .section_activites, .Vieuxportmini{
+  flex-direction: column;
+}
+.titre_activites{
+  margin-left: 0px;
+  margin-right: 30px; 
+}
+.section_activites{
+  margin-bottom: 20px;
+  width: 100%;
+}
+.Vieuxport{
+  display: none;
+}
+.Vieuxportmini{
+  display: flex;
+  max-width: 320px;
+  height: 150px;
+  margin-bottom: 40px;
+  border-radius: 20px 20px 0px 0px;
+}
+.Vieuxportmini img{
+  border-radius: 20px 20px 0px 0px;
+}
+.figvieuxportmini{
+  padding-left: 10px;
+  height: 30px;
+  width: auto;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 10px grey;
+  border-radius: 0px 0px 20px 20px;
+  background-color: white;
+}
+.FortdePomegues_IlesduFrioul{
+  margin-left: 0px;
+}
+.FortdePomegues{
+  max-width: 320px;
+  height: 150px;
+  margin-bottom: 70px;
+ }
+.FortdePomegues img{
+  height: 150px;
+ }
+.figportdespomegues{
+  border-radius: 0px 0px 20px 20px;
+}
+.Iles_du_Frioul{
+ max-width: 320px;
+  height: 150px;
+}
+.Iles_du_Frioul img{
+  height: 150px;
+}
+.ParcNationaldesCalanques img, .figparcnationaldescalanques{
+   display: none;
+ }
+.ParcNationaldesCalanquesmini{
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 20px 20px;
+  background-color: white;
+}
+.ParcNationaldesCalanquesmini img, .figparcnationaldescalanquesmini, .ParcLongchamp img{
+  width: 100%;
+}
+.figparcnationaldescalanquesmini{
+  padding-left: 10px;
+  height: 30px;
+  margin-top: 0px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 10px grey;
+  border-radius: 0px 0px 20px 20px;
+  background-color:white;
+}
+.NotreDamedelaGarde{
+  max-width: 320px;
+  margin-bottom: 70px;
+  margin-left: 0px;
+}
+.ParcLongchamp {
+  max-width: 320px;
+  margin-left: 0px;
+  margin-bottom: 70px;
+}
+.ParcLongchamp img, .NotreDamedelaGarde, .ParcLongchamp{
+  height: 150px;
+}
+/*=================footer==========*/
+footer h3{
+margin-left: 10px;
+}
+footer{
+  width: 100%;
+}
+.complements h3{
+  margin-left: 5px;
+}
+}
+@media screen and (max-width:600px){
+  /*-------------------------------------*/
+.hebergements_populaires{
+  flex-direction: column-reverse;
+  width: 100%;
+}
+aside{
+  width: 100%;
+}
+.populaires{
+  width: 90%;
+}
+.populairesMarseille{
+  width: 95%;
+}
+.section_hebergements {
+  width: 100%;
+}
+.hebergements_populaires{
+  width: 100%;
+  height: auto;
+}
+/*-------------section hébergements-----------------*/
+.section_hebergements {
+  width: 100%;
+  padding-left: 5px;
+}
+.titre_activites{
+  width: 100%;
+}
+.Marseille{
+  margin-bottom: 30px;
+}
+.section_activites{
+  overflow: hidden;
+}
+.activitesMarseille, .section_hebergements{
+  margin-left: 5px;
+}
+.ParcNationaldesCalanquesmini{
+  height: 150px;
+  margin-bottom: 70px;
+}
+.NotreDamedelaGarde {
+  margin-left: 0px;
+  height: 150px;
+}
+}
+@media screen and (max-width:500px){
+ /*===========================================================*/
 .iconerecherche{
-font-size: 25px;
+  position: absolute;
+  height: 59px;
 }
 .localisation{
   font-size: 18px;
@@ -694,212 +968,61 @@ font-size: 25px;
   width: auto;
   padding-left: 10px;
   padding-right: 10px;
+  position: relative;
   color: black;
 }
-.iconelocalisation .icone{
+.iconelocalisation .iconerech{
   font-size: 15px;
   visibility: visible;
- }
+  height: 56px;
+  width: 55px;
+  margin-top: -5px;
+  background-color: #0065FC;
+  position: absolute;
+  border-radius: 15px;
+  margin-top: -2px;
+}
+.iconerech i{
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 16px;
+}
 .iconelocalisation{
   display: flex;
   justify-content: space-around;
-  border-radius: 15% 0% 0% 15%;
+  border-radius: 15px 0px 0px 15px;
   visibility: visible;
+  position: absolute;
   font-size: 20px;
+  top:3px;
 }
 .button_add{
-  display: none;
+  display: none;  
 }
- #MapMarseille{
-  width: 95%;
-  font-size: 13px;
+.form, #MapMarseille{
+  width: 100%;
+  max-width: 300px;
+  position: relative;
 }
-.Filtres{
-  margin-left: 0px;
-}
-.hebergements_populaires{
-  flex-direction: column-reverse;
-  height: auto;
-  margin-right: 0%;
-  margin-right: 2%;
-}
-.section_hebergements{
-  flex-direction: column;
-  margin-bottom: 20px;
-  margin-left: 0px;
-}
-.titrehebergements{
-  margin-left: 0px;
-  }
-.afficher, h3{
-  padding-left: 15px;
-}
-.hebergements{
-  margin-left: 0px;
-}
-.hebergements_Marseille{
-  flex-direction: column;
-  align-items: flex-start;
-  padding-right: 0px;
-  margin-right: 0px;
- }
-.fighébergements{
-  padding-right: 8px;
+#MapMarseille{
+margin-left: 50px;
+height: 53px;
 }
 aside{
-  width: 100%;
-  margin-bottom: 30px;
+ min-width: 450px;
 }
 .populaires{
+ width: 90%;
+}
+.section_hebergements, aside, .hebergements_populaires{
   width: 100%;
 }
-.les_plus_populaires{
-  width: 100%;
-  padding-left: 10px;
-  padding-right: 5px;
-}
-.populairesMarseille{
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-}
-.activitésMarseille{
-  flex-direction: column;
-}
-.titre_activités{
-  margin-left: 0px;
-  margin-right: 30px;
-}
-.Marseille{
-  height: auto;
-  margin-left: 0px;
-  }
-.section_activités{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  width: 100%;
-}
-.Vieuxport{
-  display: none;
-}
-.Vieuxportmini{
-  display: flex;
-  flex-direction: column;
-  width: 265px;
-  height: 150px;
-  margin-bottom: 40px;
-  border-radius: 20px 20px 0px 0px;
-}
-.Vieuxportmini img{
-  border-radius: 20px 20px 0px 0px;
-}
-.figvieuxportmini{
-  box-shadow: 0px 10px 10px grey;
-  border-radius: 0px 0px 20px 20px;
-  padding-left: 10px;
- padding-bottom: 10px;
-}
-.FortdePomègues_IlesduFrioul{
-  margin-left: 0px;
-  width: 100%;
-  margin-left: 0px;
-}
-.FortdePomègues{
-  width: 265px;
-  height: 150px;
-  margin-bottom: 70px;
- }
-.FortdePomègues img{
-  height: 150px;
- }
-.figportdespomegues{
-  border-radius: 0px 0px 20px 20px;
-}
-.Iles_du_Frioul{
-  width: 265px;
-  height: 150px;
-}
-.Iles_du_Frioul img{
-  height: 150px;
-}
-.ParcNationaldesCalanques img{
-   display: none;
- }
-.ParcNationaldesCalanquesmini{
-  display: flex;
-  width: 265px;
-  border-radius: 20px 20px;
-}
-.figparcnationaldescalanquesmini{
-  padding-left: 10px;
-  height: 20px;
-  width: 100%;
-  margin-top: 0px;
-  padding-top: 10px;
-  margin-bottom: 20px;
-  border-radius: 0px 0px 20px 20px;
-  background-color:white;
-}
-.figparcnationaldescalanques {
-  display: none;
-}
-.NotreDamedelaGarde{
-  width: 265px;
-  height: 150px;
-  margin-bottom: 70px;
-  margin-left: 0px;
-}
-.ParcLongchamp {
-  width: 265px;
-  height: 150px;
-  margin-left: 0px;
-  margin-bottom: 70px;
-}
-.ParcLongchamp img{
-width: 265px;
-height: 150px;
-}
-.Apropos{
-  padding-left: 0px;
-}
-.noshebergements{
-  padding-left: 0px;
-}
-}
-@media screen and (max-width:375px){
-  /*----------------IphoneX---------------------*/
 aside{
-  width: 100%;
+  margin-right: 0px;
 }
-.hebergements_populaires{
-  flex-direction: column-reverse;
-}
-.section_hebergements {
-  width: 100%;
-  margin-left: 5px;
-  padding-left: 5px;
-}
-.hebergements img {
-  width: 100%;
-}
-.section_activités{
-  overflow: hidden;
-}
-.titre_activités{
-  width: 100%;
-}
-.activitésMarseille{
-  margin-left: 5px;
-}
-.ParcNationaldesCalanquesmini{
-  width: 265px;
-  height: 150px;
- margin-bottom: 70px;
-}
-.NotreDamedelaGarde {
-  margin-left: 0px;
-  width: 265px;
-  height: 150px;
+.Marseille p{
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: auto;
 }
 }
