@@ -15,6 +15,7 @@ header, .Menu{
   display:flex;
   justify-content: space-between;
   font-size: 20px;
+  font-family: Raleway-Bold;
 }
 header{
   height: auto;
@@ -44,25 +45,29 @@ nav li{
   height: 50px;
   padding-top: 26px;
  margin-left: -40px;
-color: #DEEBFF;
+color: gray;
 }
 .menuhebergements>a:hover{
   border-top: solid #0065fc;
   padding-top: 20px;
-  color:#0065FC;
+ 
+  color: #0065FC;
 }
 .menuactivites{
   margin-right: 30px;
-  color: #DEEBFF;
+  color:#F2F2F2;
 }
 .Menu>a,.menuhebergements>a, .menuactivites>a, .menuinscription>a{
   list-style: none;
   text-decoration: none;
 }
-.menuinscription{
+.menuinscription {
   margin-right: 20px;
-  color: #DEEBFF;
-  font-family: Raleway-Bold;
+  color: #F2F2F2;
+ font-weight: Raleway-Bold;
+}
+.menuinscription a:hover{
+  color:#0065FC;
 }
 .Menu> .menuinscription{
   display: flex;
@@ -649,6 +654,7 @@ aside{
 body{
   min-width: 335px;
   height: auto;
+
 }
 /*========header=========*/
 nav {
@@ -663,7 +669,7 @@ nav {
 ul, .Menu, .menuinscription :hover{
   margin-left: 0px;
 }
-.menuinscription>a:hover{
+.menuinscription :hover{
   border-top: none;
 }
 .menuinscription{
