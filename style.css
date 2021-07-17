@@ -475,14 +475,9 @@ margin-right: 30px;
   background-color: white;
   border-radius: 20px 20px 0px 0px;
   padding-bottom: 0px;
+  height: auto;
 }
-.ParcNationaldesCalanquesmini img{
-  width: 265px;
-  height: 150px;
-  background-color: white;
-  border-radius: 20px 20px 0px 0px;
-  padding-bottom: 0px;
-}
+
 .figparcnationaldescalanques{
   padding-left: 10px;
   height: 20px;
