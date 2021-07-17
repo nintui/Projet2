@@ -1,10 +1,10 @@
 @font-face{
   font-family: "Raleway";
-  src: url("/typo/Raleway-Regular.ttf") format('truetype');
+  src: url("\typo/Raleway-Regular.ttf") format('truetype');
 }
 @font-face{
   font-family:"Raleway-Bold";
-  src: url("/typo/Raleway-Regular.ttf") format('truetype');
+  src: url("\typo/Raleway-Regular.ttf") format('truetype');
 }
 /*===========================body==========================*/
 body{
