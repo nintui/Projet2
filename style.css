@@ -7,15 +7,15 @@
   src: url("/typo/Raleway-Bold.ttf") format('truetype');
 }
 /*===========================body==========================*/
-body{
-   font-family: Raleway, sans-serif;
+html, body{
+   font-family: Raleway-Regular, sans-serif;
 }
 /*===========================HEADER==========================*/
 header, .Menu{
   display:flex;
   justify-content: space-between;
   font-size: 20px;
-  font-family: Raleway-Bold;
+
 }
 header{
   height: auto;
@@ -35,7 +35,7 @@ li{
   margin-top: 0px;
   margin-right: 25px;
   color:#0065FC;
-  font-weight: bolder;
+
 }
 nav li{
   margin-right: 25px;
@@ -46,17 +46,20 @@ nav li{
   padding-top: 26px;
  margin-left: -40px;
  color: #F2F2F2;
-
+font-weight: bold;
 }
 .menuhebergements a:hover{
-  border-top: solid #0065FC;
+  border-top: 3px solid #0065FC;
   padding-top: 20px;
- font-weight: bolder;
+  
   color: #0065FC;
+
 }
+
 .menuactivites{
   margin-right: 30px;
   color:black;
+  font-weight: bold;
 }
 .Menu>a,.menuhebergements>a, .menuactivites>a, .menuinscription>a{
   list-style: none;
@@ -65,7 +68,7 @@ nav li{
 .menuinscription {
   margin-right: 20px;
   color: #F2F2F2;
- font-weight: Raleway-Bold;
+font-weight: bold;
 }
 .menuinscription a:hover{
   color:#0065FC;
