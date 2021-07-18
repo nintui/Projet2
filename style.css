@@ -20,7 +20,7 @@ header, .Menu{
 header{
   height: auto;
   width: 100%;
-  font-family: Raleway-Regular, sans-serif;
+
 }
 .logo{
   width : 140px;
@@ -112,7 +112,7 @@ form{
 h2{
   height: auto;
   font-size: 1.3em;
-  font-family: Raleway-Bold;
+
   
 }
 #recherche, .iconerecherche{
