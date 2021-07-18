@@ -20,6 +20,7 @@ header, .Menu{
 header{
   height: auto;
   width: 100%;
+  font-family: Raleway-Regular, sans-serif;
 }
 .logo{
   width : 140px;
@@ -47,6 +48,7 @@ nav li{
  margin-left: -40px;
  color: #F2F2F2;
 font-weight: bold;
+color: #F2F2F2;
 }
 .menuhebergements a:hover{
   border-top: 3px solid #0065FC;
@@ -58,17 +60,21 @@ font-weight: bold;
 
 .menuactivites{
   margin-right: 30px;
-  color:black;
+  color:F2F2F2;
   font-weight: bold;
 }
-.Menu>a,.menuhebergements>a, .menuactivites>a, .menuinscription>a{
+.menuactivites a{
+ 
+  text-decoration: none;
+}
+.Menu>a,.menuhebergements>a, .menuinscription>a{
   list-style: none;
   text-decoration: none;
 }
 .menuinscription {
   margin-right: 20px;
   color: #F2F2F2;
-font-weight: bold;
+  font-weight: bold;
 }
 .menuinscription a:hover{
   color:#0065FC;
