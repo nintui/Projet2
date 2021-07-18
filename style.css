@@ -2,10 +2,7 @@
   font-family: "Raleway";
   src: url("/typo/Raleway-Regular.ttf") format('truetype');
 }
-@font-face{
-  font-family:"Raleway-Bold";
-  src: url("/typo/Raleway-Bold.ttf") format('truetype');
-}
+
 /*===========================body==========================*/
 html, body{
    font-family: Raleway-Regular, sans-serif;
@@ -687,7 +684,7 @@ ul, .Menu, .menuinscription :hover{
   border-top: none;
   border-bottom: solid #0065FC;
   padding-bottom: 25px;
-  font-family: Raleway-Bold;
+
 }
 .Menu {
   border-bottom: solid rgb(243, 236, 236);
