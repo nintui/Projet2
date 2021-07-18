@@ -215,6 +215,7 @@ visibility: hidden;
   margin-left: 25px;
   margin-right: 60px;
   border-radius: 20px;
+  padding-left: 40px;
 } 
 .Filtres a{
   text-decoration: none;
@@ -226,11 +227,11 @@ visibility: hidden;
   background-color:#F2F2F2;
 }
 .Filtres .icone{
-  height: 30px;
-  width: 30px;
-  font-size: 50%;
+  height: 40px;
+  width: 40px;
+  font-size: auto;
   border-radius: 50%;
-  background-color: lightblue;
+  background-color:#DEEBFF;
   position: absolute;
   color: #0065FC;
   margin-right: 30px;
