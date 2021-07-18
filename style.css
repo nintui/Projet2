@@ -99,6 +99,7 @@ font-weight: bold;
 }
 .center{
  margin-left: 0px;
+ font-weight: lighter;
 }
 form, h2, #MapMarseille, .button_add{
   width: auto;
