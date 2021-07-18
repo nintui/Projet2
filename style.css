@@ -208,7 +208,7 @@ visibility: hidden;
   padding: 5px 10px 5px 30px;
   position: relative;
   justify-content: space-around;
-  font-size: 30px;
+  font-size: 25px;
   height:auto;
   width:auto;
   font-weight: lighter;
@@ -229,7 +229,7 @@ visibility: hidden;
 .Filtres .icone{
   height: 40px;
   width: 40px;
-  font-size: auto;
+
   border-radius: 50%;
   background-color:#DEEBFF;
   position: absolute;
