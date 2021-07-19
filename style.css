@@ -43,7 +43,12 @@ nav li{
   padding-top: 26px;
  margin-left: -40px;
  color: #F2F2F2;
-font-weight: bold;
+ text-decoration: none;
+}
+.menuhebergements a{
+ text-decoration: none;
+color: #858585;
+
 }
 .menuhebergements a:hover{
   border-top: 3px solid #0065FC;
@@ -52,10 +57,12 @@ font-weight: bold;
 }
 .menuactivites{
   margin-right: 30px;
-  color: #F2F2F2;
+  color: #858585;
+
 }
 .menuactivites a{
   text-decoration: none;
+  color: #858585;
 }
 .Menu>a,.menuhebergements>a, .menuinscription>a{
   list-style: none;
@@ -63,9 +70,14 @@ font-weight: bold;
 }
 .menuinscription {
   margin-right: 20px;
-  color: #F2F2F2;
+  color: #0065FC;
   font-weight: bold;
+  
 }
+.menuinscription a{
+  color:#0065FC;
+}
+
 .menuinscription a:hover{
   color:#0065FC;
 }
@@ -182,7 +194,7 @@ visibility: hidden;
   margin-left: 30px;
 }
 .Filtres > div{
-  border:5px solid rgb(245, 245, 245);
+  border:1px solid rgb(206, 206, 206);
   padding: 5px 10px 5px 30px;
   position: relative;
   justify-content: space-around;
@@ -327,6 +339,14 @@ aside{
 }
 .populaires, .populairesicone, .Marseille, figure img figcaption {
   display: flex;
+}
+.populairesicone{
+  position: relative;
+}
+.courbe_fa{
+  position: absolute;
+  top: 0px;
+  right: 25px;
 }
 .populaires{
   flex-wrap: wrap;
@@ -737,7 +757,7 @@ aside{
   margin-left: 0px;
 } 
 .Marseille img{
-  width: 80%;
+
   margin:5px;
   padding: 0px;
 }
