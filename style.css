@@ -282,6 +282,12 @@ h2{
   background-color: #F2F2F2;
   margin-right: 30px;
 }
+.hebergements_populaires{
+  width: 100%;
+}
+.section_hebergements{
+  width: 100%;
+}
 .section_hebergements, .fighebergements, .hebergements{
   border-radius: 20px; 
 }
