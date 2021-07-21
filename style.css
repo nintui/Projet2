@@ -347,6 +347,7 @@ aside{
   flex-wrap: wrap;
   padding-left: 5px;
   border-radius: 20px;
+width: 90%;
 }
 .populairesicone{
   width: 40px;
@@ -354,7 +355,8 @@ aside{
   align-items: center;
   margin-top:15px ;
   font-size: 25px;
-  margin-right: 40px;
+ 
+
 }
 .les_plus_populaires p{
   padding-bottom: 15px;
@@ -380,9 +382,10 @@ span .etoile{
   font-size: 14px;
 }
 .Marseille p{
-  width: 150px;
+  width: 160px;
   font-size: 17px;
   margin-right: 30px;
+  margin-bottom: 10px;
 }
 /*------------------Section activités-----------------*/
 .section_activites {
@@ -728,18 +731,18 @@ aside{
 }
 .Marseille p{
   margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 14px;
+  margin-bottom: 10px;
+  font-size: 15px;
 }
 .hebergements_populaires{
   display: flex;
   flex-direction: column-reverse;
 }
 .populaires{
-  width: 65%;
+
 }
 .Marseille{
-  min-width: 300px;
+  min-width: 320px;
   width: 80%;
   margin-left: 0px;
 } 
@@ -895,7 +898,7 @@ aside, .hebergements_populaires{
   width: 100%;
 }
 .populaires{
-  width: 90%;
+
 }
 .populairesMarseille{
   width: 95%;
@@ -976,6 +979,6 @@ aside, .populairesMarseille, .form, #MapMarseille{
   width: 100%;
 }
 .populaires{
-width: 95%;
+
 }
 }
