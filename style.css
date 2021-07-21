@@ -375,7 +375,7 @@ span .etoile{
   border-radius: 15px 0px 0px 15px;
 }
 .Marseille span{
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .Marseille{
   background-color: white;
@@ -384,9 +384,8 @@ span .etoile{
 }
 .Marseille p{
   width: 160px;
-  margin-right: 20px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin: 10px 20px 0px 10px;
+
 }
 /*------------------Section activités-----------------*/
 .section_activites {
