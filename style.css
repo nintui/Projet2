@@ -550,6 +550,12 @@ footer{
 .Menu{
   font-size: 20px;
 }
+aside{
+  width: 70%;
+}
+.section_hebergements{
+  width: 30%;
+}
 .NotreDamedelaGarde_ParcLongchamp{
 max-width: 320px;
 margin-left: 5px;
