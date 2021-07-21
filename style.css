@@ -293,6 +293,7 @@ h2{
 }
 .hebergements_Marseille{
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .fighebergements{
   font-size: 16px;
