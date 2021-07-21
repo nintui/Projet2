@@ -40,6 +40,9 @@ margin-left: 10px
 .mRightzero{
   margin-right: 0px;
 }
+.alCenter{
+  align-items: center;
+}
 /*===========================HEADER==========================*/
 .logo{
   width : 140px;
@@ -50,7 +53,6 @@ li{
   list-style: none;
 }
 .Menu{
-  align-items: center;
   margin-top: 0px;
   margin-right: 25px;
   font-size: 20px;
@@ -127,16 +129,14 @@ h2{
   height: auto;
   font-size: 1.3em;
 }
-#recherche, .iconerecherche{
-  align-items: center;
+#recherche{
   height: 50px;
-}
- #recherche{
   padding: 20px 0px;
   display: flex;
   justify-content: stretch;
   margin-left: 0px;
   font-weight:bold;
+  align-items: center;
  }
  .iconerecherche {
    justify-content: center;
@@ -144,6 +144,7 @@ h2{
    width: 55px;
    border-radius: 15px 0 0 15px;;
    font-size: 18px;
+   height: 50px;
  }
  #MapMarseille{
   font-weight: bold;
@@ -282,9 +283,6 @@ h2{
   background-color: #F2F2F2;
   margin-right: 30px;
   width: 70%;
-}
-.hebergements_populaires{
- 
 }
 .section_hebergements, .fighebergements, .hebergements{
   border-radius: 20px; 
@@ -537,7 +535,7 @@ footer{
   flex-wrap: wrap;
   font-size: 15px;
  }
- .A_propos, .Assistance, .Nos_hebergements{
+.A_propos, .Assistance, .Nos_hebergements{
   width: 247px;
   margin-right: 2px;
   left: 0px;
@@ -578,7 +576,6 @@ margin-left: 5px;
 }
 @media screen and (max-width:1200px){
 /*================================================*/
-
 aside{
   width: 50%;
 }
@@ -805,7 +802,7 @@ aside{
   margin-left: 0px;
   margin-bottom: 20px;
   width: 100%;
- padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 .FortdePomegues{
   max-width: 320px;
@@ -900,9 +897,6 @@ footer{
 aside, .hebergements_populaires{
   width: 100%;
 }
-.populaires{
-
-}
 .populairesMarseille{
   width: 95%;
 }
@@ -975,13 +969,10 @@ aside, .hebergements_populaires{
   position: relative;
 }
 #MapMarseille{
-margin-left: 50px;
-height: 53px;
+  margin-left: 50px;
+  height: 53px;
 }
 aside, .populairesMarseille, .form, #MapMarseille{
   width: 100%;
-}
-.populaires{
-
 }
 }
