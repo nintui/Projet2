@@ -62,21 +62,23 @@ nav li{
 }
 .menuhebergements{
   text-align: center;
-  height: 50px;
+  height: 45px;
   padding-top: 22px;
-  margin-left: -40px;
+
+ margin-left: -40px;
   color: #F2F2F2;
   text-decoration: none;
   }
-.menuhebergements a{
+.menuhebergements a, .menuhebergements a{
   text-decoration: none;
   color: #858585;
 }
-.menuhebergements a:hover{
+.menuhebergements a:hover, .menuhebergements a:hover{
   border-top: 3px solid #0065FC;
   padding-top: 20px;
   color: #0065FC;
 }
+
 .menuactivites{
   margin-right: 30px;
   color: #858585;
@@ -658,6 +660,11 @@ ul, .Menu, .menuinscription :hover{
   font-size: 20px;
 }
 .menuhebergements a:hover {
+  border-top: none;
+  border-bottom: solid #0065FC;
+  padding-bottom: 25px;
+}
+.menuactivites a:hover{
   border-top: none;
   border-bottom: solid #0065FC;
   padding-bottom: 25px;
