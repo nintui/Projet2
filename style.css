@@ -409,9 +409,12 @@ span .etoile{
   margin-right: 20px;
   box-shadow: 0px 10px 10px grey;
 }
-.Vieuxport, .figvieuxport, .Vieuxportmini, .FortdePomegues_IlesduFrioul div, .FortdePomegues, .Iles_du_Frioul, .ParcNationaldesCalanques{
+.Vieuxport, .figvieuxport, .Vieuxportmini, .FortdePomegues_IlesduFrioul div, .FortdePomegues, .Iles_du_Frioul, .ParcNationaldesCalanques, .NotreDamedelaGarde, .ParcLongchamp{
   border-radius: 20px;
+  margin:0;
+ 
 }
+
 .Vieuxport img{
     width: 270px;
     height: 100%;
@@ -428,10 +431,17 @@ span .etoile{
   display: none;
   margin-right: 4px;
 }
+.FortdePomegues_IlesduFrioul{
+  display: flex;
+  width: 295px;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .FortdePomegues_IlesduFrioul div{
   width:300px;
   display: flex;
   flex-wrap: wrap;
+
   height: 100%;
   padding-left: 0px;
   margin-right: 0px;
@@ -475,6 +485,11 @@ span .etoile{
   padding-bottom: 10px;
   border-radius: 0px 0px 20px 20px;
 }
+.NotreDamedelaGarde_ParcLongchamp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .NotreDamedelaGarde_ParcLongchamp img{
   flex-wrap: wrap;
   height: 100%;
@@ -504,6 +519,7 @@ span .etoile{
   border-radius: 20px;
   border-radius: 20px 20px 0px 0px;
   margin-top: 0px;
+  height: 150px;
 }
 .fignotredame{
   box-shadow: 0px 10px 10px grey;
@@ -608,6 +624,9 @@ aside{
 .activitesMarseille{
   display: flex;
   flex-flow:  wrap;
+}
+.activitesMarseille > figure, .activitesMarseille >div{
+  margin-bottom: 20px;
 }
 }
 @media screen and (max-width:700px){
@@ -775,6 +794,9 @@ aside{
 .Vieuxport{
   display: none;
 }
+.activitesMarseille > .Vieuxportmini{
+  margin-bottom: 60px;
+}
 .Vieuxportmini{
   display: flex;
   max-width: 320px;
@@ -843,6 +865,10 @@ aside{
    height: 150px;
    border-radius: 20px 20px 0 0;
  }
+.ParcNationaldesCalanquesmini>a{
+  width: 100%;
+}
+ 
 .ParcNationaldesCalanquesmini{
   background-color:white;
   max-width: 320px;
