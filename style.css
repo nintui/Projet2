@@ -304,7 +304,8 @@ margin-left: 30px;
   margin: 30px auto;
  
   border-radius: 20px;
-  width: 300px;
+ max-width: 300px;
+ width: 100%;
   background-color: white;
 }
 .Marseille img{
@@ -333,13 +334,14 @@ margin-left: 30px;
   margin-bottom: 20px;
 }
 .titre_activites{
-  margin: 10px 0 10px 10px
+  margin: 20px 0 20px 10px
 }
 .activitesMarseille{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 10px 0;
+  height: 450px;
 }
 .ParcNationaldesCalanquesmini, .Vieuxportmini{
   display: none;
@@ -347,10 +349,12 @@ margin-left: 30px;
 .Vieuxport, .FortdePomegues_IlesduFrioul, .ParcNationaldesCalanques{
   margin-right: 10px;
   margin-bottom: 10px;
-  border-radius: 0 0 20px 20px;
+ 
 }
-.Vieuxport, .FortdePomegues, .IlesduFrioul, .ParcNationaldesCalanques, .NotreDamedelaGarde, .ParcLongchamp{
+.Vieuxport, .FortdePomegues, .Iles_du_Frioul, .ParcNationaldesCalanques, .NotreDamedelaGarde, .ParcLongchamp{
   box-shadow: 0px 5px 10px silver;
+   border-radius: 20px;
+  
 }
 .activitesMarseille img{
   width: 290px;
@@ -360,8 +364,25 @@ margin-left: 30px;
   margin: 10px 0 10px 10px;
   font-size: 15px;
 }
+.FortdePomegues h3{
+margin-bottom: 10px;
+
+}
+.FortdePomegues_IlesduFrioul h3{
+
+
+
+}
 .FortdePomegues{
-  margin-bottom: 20px;
+  height: 240px;
+}
+.Iles_du_Frioul{
+  height: 180px;
+}
+.FortdePomegues_IlesduFrioul{
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
 }
 .Iles_du_Frioul img{
   height: 130px;
@@ -386,21 +407,14 @@ footer{
 .footer_info h3, p{
   margin: 10px 0 10px 0;
 }
-@media screen and (max-width:1100px){
 
-  .Marseille{
-    margin: auto auto 90px 20px;
-  }
-  .les_plus_populaires{
-    width: 160px;
-  }
-  .hebergement_Marseille_ville{
-    margin-left: 10px;
-   
+
+@media  screen and (max-width: 1200px) {
+  .activitesMarseille{
+    height: auto;
+    justify-content: space-around;
   }
 }
-
-
 @media screen and (max-width:1000px){
 .Filtre{
   max-width: 100%;
@@ -417,12 +431,14 @@ footer{
 }
 .populaires, .hebergements {
   width: 100%;
+  margin-bottom: 20px;
  
 
 }
+
 .Marseille{
   width: 400px;
-  margin-left: 10px;
+
 }
 
 }
@@ -500,15 +516,17 @@ left: 20px;
   font-size: 10px;
 }
 
-.hebergement_Marseille_ville div, .hebergement_Marseille_ville img{
- 
+.hebergement_Marseille{
+
 }
 .populaires h2, .Marseille{
 
 }
-div .footer_info{
+.footer_info{
+width: calc(100% - 20px);
+flex-direction: column;
+margin: 20px;
 
- max-width: 650px;
 
 }
 }
