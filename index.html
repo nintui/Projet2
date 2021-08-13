@@ -5,186 +5,196 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Reservia</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-
-    
+    <link rel="stylesheet" href="http://jigsaw.w3.org/css-validator/validator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 </head>
 <body>
-<header class="dFlex wCent jusBet hAuto">
-    <div class="logo hCent"><img src="img/logo/reservia.png" alt="logo de Reservia"></div>
-<nav>
-    <ul class="Menu dFlex WAuto jusBet hCent alCenter">
-<li class="menuhebergements"><a href="#sec_heb">Hébergements</a></li>
-<li class="menuactivites"><a href="#sec_act">Activités</a></li>
-<li class="menuinscription dFlex"><a href="inscription">S'inscrire</a></li>
-    </ul>
-</nav>
-</header>  
-    <div id="section_content"> <!--content-->
-        <section  class="banniere padTop wCent hAuto"> <!--banniere-->
-                  <h2>Trouvez votre hébergements pour des vacances de rêve</h2>   
-                     <p class="center mLeftzero">En plein centre ville ou en pleine nature</p>                            
-                    <div id="recherche">     <!--recherche-->
-                            <form method="get" action="map.html" id="Map">
-                              <div class="iconerecherche dFlex mRightzero alCenter"> <div class="iconemap">
-                                  <i class="fas fa-map-marker-alt"></i></div></div>
-                              <div>  <input name="cherche" type="text" id="MapMarseille" value="Marseille, France"/></div>
-                              <div> <input type="button" value="Rechercher" class="button_add"/><div class="localisation"><div class="iconelocalisation"><div class="iconerech"><i class="fas fa-search"></i></div></div></div></div>
-                            </form>
-                    </div>    <!--fin-recherche-->
-                    <div class="blocFiltres padTop dFlex wCent"> <!--bloc filtres-->
-                            <div class="titrefiltres dFlex">
-                                <h2>Filtres</h2>
-                          </div>
-                            <div class="Filtres dFlex wAuto">
-                                      <div class="Filtresicone dFlex"><div class="icone dFlex"><i class="fas fa-money-bill-wave"></i></div><a href="">Économique</a></div>
-                                      <div class="Filtresicone dFlex"><div class="icone dFlex"><i class="fas fa-child"></i></div><a href="">Familiale</a></div>
-                                      <div class="Filtresicone dFlex"><div class="icone dFlex"><i class="fas fa-heart"></i></div><a href="">Romantique</a></div>
-                                      <div class="Filtresicone dFlex"><div class="icone dFlex"><i class="fas fa-dog"></i></div><a href="">Animaux autorisés</a></div>
-                            </div>                     
-                     </div>    <!--fin bloc filtres-->        
-                   <div class="blocinfo dFlex">        <!--bloc info--> 
-                       <div class="info dFlex"> 
-                          <div class="infoicone dFlex"><div class="icone"> <i class="fas fa-info"></i> </div></div> 
-                          <h3 class="dFlex">Plus de 500 logements sont disponibles dans cette ville</h3>                     
-                        </div>                      
-                    </div>      <!--fin bloc info-->            
-        </section>  <!--fin banniere-->
-          <div class="hebergements_populaires dFlex wCent hAuto jusBet">
-            <section class="section_hebergements"> <a id="sec_heb"></a><!--section hebergements-->
-                <h2 class="titrehebergements">Hébergements à Marseille</h2> <!--titre hébergements-Marseille-->           
-                <div class="hebergements_Marseille dFlex">  <!--hebergementsà Marseille-->
-                    <figure class="hebergements">
-                      <a href="#">  <img src="img/hebergements/auberge_la_cannebiere.jpg" alt="image de la Cannebière"> </a>
-                        <figcaption class="fighebergements"><p><strong>Auberge la Cannebière</strong></p>
-                          <p>  Nuit à partir <b class=prix>25€</b></p>
-                        <span class="etoile">★★★★<b class=etoilegrise>★</b></span></figcaption>
-                    </figure>
-                    <figure class="hebergements">
-                        <a href="#"><img src="img/hebergements/hotel_du_port.jpg" alt="image de l'Hôtel du Port" ></a>
-                        <figcaption class="fighebergements"><p><strong>Hôtel du port</strong></p>
-                         <p>   Nuit à partir  <b class=prix>52€</b></p>
-                        <span> ★★★★★</span></figcaption>
-                    </figure>
-                    <figure class="hebergements">
-                        <a href="#"><img src="img/hebergements/hotel_les_mouettes.jpg" alt="image-de_l'Hôtel_Les_Mouettes"></a>
-                        <figcaption class="fighebergements"><p><strong>Hôtel Les mouettes</strong></p>
-                          <p> Nuit à partir  <b class=prix>76€</b></p> 
-                        <span>★★★★<b class=etoilegrise>★</b></span></figcaption>
-                    </figure>                  
-                    <figure class="hebergements">
-                        <a href="#"><img src="img/hebergements/hotel_de_la_mer.jpg"  alt="image de l'Hôtel de la mer"></a>
-                        <figcaption class="fighebergements"><p><strong>Hôtel de La mer</strong></p>
-                        <p> Nuit à partir  <b class=prix>46€</b></p> 
-                        <span>★★★<b class=etoilegrise>★★</b></span></figcaption>
-                    </figure>                   
-                    <figure class="hebergements">
-                        <a href="#"><img src="img/hebergements/auberge_le_panier.jpg" alt="image de l'Auberge Le Panier"></a>
-                        <figcaption class="fighebergements"><p><strong>Auberge Le Panier</strong></p>
-                         <p>  Nuit à partir <b class=prix>23€</b></p> 
-                        <span> ★★★★<b class=etoilegrise>★</b></span> </figcaption>
-                    </figure>                  
-                    <figure class="hebergements">
-                        <a href="#"><img src="img/hebergements/hotel_chez_amina.jpg" alt="image de l'Hôtel chez Amina"></a>
-                        <figcaption class="fighebergements"><p><strong>Hôtel chez Amina</strong></p>
-                         <p> Nuit à partir <b class=prix>96€</b></p>  
-                        <span> ★★★★★</span> </figcaption>
-                        </figure>
-                </div>
-                <div class="afficher padTop"><a href="#"><h3>Afficher plus</h3></a></div> 
-            </section>      <!--fin-section_hébergements-->                                                        
-            <aside>   <!--populaires-->
-                <div class="populaires dFlex jusBet"> 
-                    <div class="titrepopulaires mLeftdix"> <h2>Les plus populaires</h2> </div> 
-                         
-                    <div class="populairesicone dFlex"> <div class="courbe_fa"><i class="fas fa-chart-line"></i></div></div>
-                    </div>  <!--fin-populaires-->                   
-                    <div class="populairesMarseille mLeftdix"><!--populairesMarseille-->
-                        <figure class="Marseille padTop mLeftdix">
-                          <a href="#"><img src="img/les_plus_populaires/hotel_le_soleil_du_matin.jpg" alt="image de l'Hôtel Le soleil du matin"></a> 
-                            <figcaption class="les_plus_populaires"><p><strong>Hôtel Le Soleil du matin</strong></p>
-                               <p>Nuit à partir de <b class=prix>128€</b></p>
-                            <span>★★★★<b class=etoilegrise>★</b></span></figcaption>
-                        </figure>
-                        <figure class="Marseille padTop mLeftdix">
-                            <a href="#"><img src="img/les_plus_populaires/au_coeur_de_l_eau_chambre_d_hotes.jpg" alt="image de la chambre d'hôtes Au Coeur de l'Eau"></a>
-                            <figcaption class="les_plus_populaires"><p><strong>Au coeur de l'eau Chambre d'hôtes</strong> </p>
-                             <p> Nuit à partir de <b class=prix>71€</b></p> 
-                            <span>★★★★★</span></figcaption>
-                          </figure>
-                        <figure class="Marseille padTop mLeftdix">        
-                            <a href="#"><img src="img/les_plus_populaires/hotel_tout_bleu_et_blanc.jpg" alt="image de l'Hôtel Tout bleu et blanc"></a>
-                           <figcaption class="les_plus_populaires"><p><strong>Hôtel Tout bleu et Blanc</strong></p>
-                            <p>  Nuit à partir de <b class=prix>68€</b></p>
-                            <span>★★★★★</span></figcaption> 
-                        </figure>
-                </div><!--fin populairesMarseille-->
-            </aside>
-            </div><!--fin section"hebergements_populaires"-->
+    <header>
+       <div class="entete">
+        <div class="logo"><img src="img/logo/reservia.png" alt="logo de Reservia"></div>
+        <div class="inscriptionmobile">S'inscrire</div>
+        </div>
+        <nav>
+            <a class="nav_hebergements hebergements_activites" href="#sec_heb">Hébergements</a>
+            <a class="nav_activites hebergements_activites" href="#sec_act">Activités</a>
+            <a class="nav_inscription" href="inscription">S'inscrire</a>
+        </nav>
+    </header>
+    <main>
+    <section class="banniere">
+        <h2 class="banniere_loc">Trouvez votre hébergements pour des vacances de rêve</h2>
+        <p class="centre">En plein centre ville ou en pleine nature</p>
+        <div class="recherche">
+          <div class="iconerecherche"> <i class="fas fa-map-marker-alt"></i></div> 
+            <input class="rechercher_text" name="cherche" type="text" value="Marseille, France"/>
+            <div class="rechercher_loc"><p class="rechercher_search">Rechercher</p><div class=" rechercher_icone"><i class="fas fa-search"></i> </div></div>              
+        </div>
+        <div class="Filtres">
+            <h3  class="filtre_titre">Filtres</h3>
+        <div class="filtre_theme">
+            <div  class="filtre_theme_detail"><div class="contour"><i class="fas fa-money-bill-wave"></i></div><div class="filtre_detail"><a href="">Économique</a> </div></div>
+            <div  class="filtre_theme_detail"><div class="contour"><i class="fas fa-child"></i></div><div class="filtre_detail"><a href="">Familiale</a></div>  </div>
+            <div  class="filtre_theme_detail"><div class="contour"><i class="fas fa-heart"></i></div><div class="filtre_detail"><a href="">Romantique</a></div> </div>
+            <div  class="filtre_theme_detail"><div class="contour"><i class="fas fa-dog"></i></div ><div class="filtre_detail"><a href="">Animaux autorisés</a></div> </div>
+        </div>
+        </div>
+        <div class="info_centre"> <i class="fas fa-info info"></i><p class="centre_info"> Plus de 500 logements sont disponibles dans notre ville</p> </div> 
+    </section>
+    <section  class="hebergements_populaires"> 
+            <div class="hebergements"><a id="sec_heb"></a> 
+                <h2>Hébergements à Marseille</h2>
+                <div class="hebergements_Marseille">
+                    <div class="hebergement_Marseille_ville">
+                        <a href="#">  <img src="img/hebergements/auberge_la_cannebiere.jpg" alt="image de la Cannebière"> </a>
+                       <div>
+                            <h3>Auberge la Cannebière</h3>
+                            <p class="nuit">Nuit à partir de <strong>25€</strong></p>
+                            <span class="etoile">★★★★<b class=etoilegrise>★</b></span>
+                        </div>
+                    </div>
+                    <div class="hebergement_Marseille_ville">
+                        <a href="#">  <img src="img/hebergements/hotel_du_port.jpg" alt="image de l'Hôtel du Port" > </a>
+                        <div>
+                            <h3>Hôtel du port</h3>
+                            <p class="nuit">Nuit à partir de <strong>52€</strong></p>
+                            <span class="etoile">★★★★★</span>
+                        </div>
+                    </div>   
+                    <div class="hebergement_Marseille_ville">
+                        <a href="#">  <img src="img/hebergements/hotel_les_mouettes.jpg" alt="image-de_l'Hôtel_Les_Mouettes"> </a>
+                        <div>
+                            <h3>Hôtel Les mouettes</h3>
+                            <p class="nuit">Nuit à partir de <strong>76€</strong></p>
+                            <span class="etoile">★★★★<b class=etoilegrise>★</b></span>
+                        </div> 
+                    </div>
+                    <div class="hebergement_Marseille_ville">
+                        <a href="#">  <img src="img/hebergements/hotel_de_la_mer.jpg"  alt="image de l'Hôtel de la mer"> </a>
+                        <div>
+                           <h3>Hôtel de la mer</h3>
+                           <p class="nuit">Nuit à partir de <strong>46€</strong></p>
+                           <span class="etoile">★★★<b class=etoilegrise>★★</b></span>
+                        </div>  
+                    </div>
+                    <div class="hebergement_Marseille_ville">
+                        <a href="#">  <img src="img/hebergements/auberge_le_panier.jpg" alt="image de l'Auberge Le Panier"> </a>
+                        <div>
+                            <h3>Auberge Le Panier</h3>
+                            <p class="nuit">Nuit à partir de <strong>23€</strong></p>
+                            <span class="etoile">★★★★<b class=etoilegrise>★</b></span>
+                        </div>
+                    </div>
+                    <div class="hebergement_Marseille_ville">
+                        <a href="#">  <img src="img/hebergements/hotel_chez_amina.jpg" alt="image de l'Hôtel chez Amina"> </a>
+                        <div>
+                            <h3>Hôtel chez Amina</h3>
+                            <p class="nuit">Nuit à partir de <strong>96€ </strong></p>
+                            <span class="etoile">★★★★★</span>
+                        </div>
+                    </div>
+                </div>  
+                <h2 class="affichage">Afficher plus</h2> 
+            </div>
+             
+            <div class="populaires">
+                <div class="populaires_grid"><h2 class=titre_populaires>Les plus populaires</h2> <i class="fas fa-chart-line courbe"></i>     </div>
+                           
+                <!--populairesMarseille-->
+                <div class="Marseille">
+                        <a href="#"><img src="img/les_plus_populaires/hotel_le_soleil_du_matin.jpg" alt="image de l'Hôtel Le soleil du matin"></a> 
+                        <div class="les_plus_populaires">
+                            <h3>Hôtel Le Soleil du matin</h3>
+                                <p class="nuit_A_Marseille">Nuit à partir de <b class=prix>128€</b></p>
+                            <span class="etoile">★★★★<b class=etoilegrise>★</b></span>
+                        </div>
+                    </div>
+                    <div class="Marseille">
+                        <a href="#"><img src="img/les_plus_populaires/au_coeur_de_l_eau_chambre_d_hotes.jpg" alt="image de la chambre d'hôtes Au Coeur de l'Eau"></a>
+                        <div class="les_plus_populaires">
+                            <h3>Au coeur de l'eau Chambre d'hôtes</h3>
+                            <p class="nuit_A_Marseille">Nuit à partir de <b class=prix>71€</b> </p> 
+                            <span class="etoile">★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="Marseille">        
+                        <a href="#"><img src="img/les_plus_populaires/hotel_tout_bleu_et_blanc.jpg" alt="image de l'Hôtel Tout bleu et blanc"></a>
+                        <div class="les_plus_populaires">
+                            <h3>Hôtel Tout bleu et Blanc</h3>
+                            <p class="nuit_A_Marseille"> Nuit à partir de <b class=prix>68€</b></p>
+                            <span class="etoile">★★★★★</span>
+                        </div> 
+                    </div> 
+               
+            </div>             
+        </section>
         <section class="section_activites"> <a id="sec_act"></a>      <!--section activités--> 
-            <h2 class="titre_activites wAuto">Activités à Marseille</h2>  
+            <h2 class="titre_activites">Activités à Marseille</h2>  
             <!--activités à Marseille-->
-            <div class="activitesMarseille dFlex jusBet">
-                <figure class="Vieuxport hCent mLeftdix">
-                 <a href="#"><img  src="img/activites_a_marseille/vieux_port.jpg" alt="image de l'hôtel Vieux Port"></a> 
-                    <figcaption class="figvieuxport wAuto"><strong>Vieux Port</strong></figcaption>
-                    </figure>
-                <figure class="Vieuxportmini mLeftzero">
-                    <img src="img/activites_a_marseille/vieux_port_mini.jpg" alt="image du Vieux Port">
-                    <figcaption class="figvieuxportmini"><strong>Vieux Port</strong></figcaption>
-                </figure>
+            <div class="activitesMarseille">
+                <div class="Vieuxport">
+                        <a href="#"><img  src="img/activites_a_Marseille/vieux_port.jpg" alt="image de l'hôtel Vieux Port"></a> 
+                        <h3>Vieux Port</h3>
+                </div>
+                <div class="Vieuxportmini">
+                    <a href="#">   <img src="img/activites_a_marseille/vieux_port_mini.jpg" alt="image du Vieux Port"></a> 
+                        <h3>Vieux Port</h3>
+                </div>
                 <div class="FortdePomegues_IlesduFrioul">
-                    <figure class="FortdePomegues mLeftzero">  
-                        <a href="#"><img src="img/activites_a_marseille/fort_de_pomegue.jpg" alt="image du Fort de Fort_de_Pomègues"></a> 
-                        <figcaption class="figportdespomegues wAuto mLeftzero"><strong>Fort de Pomègues</strong></figcaption>
-                    </figure> 
-                    <figure class="Iles_du_Frioul mLeftzero">
-                        <a href="#"><img src="img/activites_a_marseille/iles_du_frioul.jpg" alt="image de l'Ile du Frioul"></a>
-                        <figcaption class="figilesdufrioul wAuto"><strong>Iles du Frioul</strong></figcaption>
-                    </figure>        
-                </div>   
-                <figure class="ParcNationaldesCalanques hCent mLeftzero mRightzero">
-                    <a href="#"><img src="img/activites_a_marseille/Parc_National_des_Calanques.jpg" alt="image Parc National des Calanques"></a>
-                    <figcaption class="figparcnationaldescalanques dFlex"><strong>Parc National des Calanques</strong></figcaption>      
-                </figure>
-                <figure class="ParcNationaldesCalanquesmini">
-                    <a href="#"><img src="img/activites_a_marseille/parc_national_des_calanquesmini.jpg" alt="image du parc national des Calanques"></a>
-                    <figcaption class="figparcnationaldescalanquesmini"><strong>Parc National des Calanques</strong></figcaption>
-                </figure>
+                    <div class="FortdePomegues">  
+                            <a href="#"><img src="img/activites_a_marseille/fort_de_pomegue.jpg" alt="image du Fort de Fort_de_Pomègues"></a> 
+                            <h3>Fort de Pomègues</h3>
+                    </div> 
+                    <div class="Iles_du_Frioul">
+                            <a href="#"><img src="img/activites_a_marseille/iles_du_frioul.jpg" alt="image de l'Ile du Frioul"></a>
+                            <h3>Îles du Frioul</h3>
+                    </div>        
+                </div> 
+                <div class="ParcNationaldesCalanques">
+                         <a href="#"><img src="img/activites_a_marseille/parc_national_des_calanques.jpg" alt="image Parc National des Calanques"></a>
+                         <h3>Parc National des Calanques</h3>     
+                </div>
+                <div class="ParcNationaldesCalanquesmini">
+                         <a href="#"><img src="img/activites_a_marseille/parc_national_des_calanquesmini.jpg" alt="image du parc national des Calanques"></a>
+                         <h3>Parc National des Calanques</h3>
+                </div>
                 <div class="NotreDamedelaGarde_ParcLongchamp">
-                    <figure class="NotreDamedelaGarde">
-                        <a href="#"><img src="img/activites_a_marseille/notre_dame_de_la_garde.jpg" alt="image de Notre Dame de la Garde" ></a>
-                        <figcaption class="fignotredame"><strong>Notre Dame de la Garde</strong></figcaption>
-                    </figure>
-                    <figure class="ParcLongchamp">
-                        <a href="#"><img src="img/activites_a_marseille/parc_longchamp.jpg" alt="image du Parc Longchamp"></a>
-                        <figcaption class="figparcLongchamp"><strong>Parc Longchamp</strong></figcaption>
-                    </figure>                
-                    </div>                      
+                    <div class="NotreDamedelaGarde">
+                          <a href="#"><img src="img/activites_a_marseille/notre_dame_de_la_garde.jpg" alt="image de Notre Dame de la Garde" ></a>
+                          <h3>Notre Dame de la Garde</h3>
+                    </div>
+                    <div class="ParcLongchamp">
+                          <a href="#"><img src="img/activites_a_marseille/parc_longchamp.jpg" alt="image du Parc Longchamp"></a>
+                             <h3>Parc Longchamp</h3>
+                    </div>      
+                </div>                              
             </div>     <!--fin activités à Marseille-->
+
+        
         </section><!--fin section activités-->
-    </div><!--fin content-->
-<footer class="dFlex wAuto hAuto jusBet">
-    <div class="complements dFlex jusBet">
-        <div class="A_propos">
-            <h3 class="Apropos">A propos</h3>
-            <p>Fonctionnement du site</p> 
-            <p> Conditions générales de vente</p>
-            <p> Données et confidentialités</p>
+    </main>   
+<footer>
+    <div class="footer_info">
+        <div>
+            <h3>A propos</h3>
+            <p>Fonctionnement du site
+             <p> Conditions générales de vente</p>
+              <p> Données et confidentialités</p> 
+            
         </div>
-        <div class="Nos_hebergements">
-            <h3 class="noshebergements">Nos hébergements</h3>
+    
+        <div>
+            <h3>Nos hébergements</h3>
             <p>Charte qualité</p>
-            <p> Soumettre votre hôtel</p>
+          <p>votre hôtel</p>
         </div>
-        <div class="Assistance">
-            <h3 class="assistance">Assistance</h3>
-            <p>Centre d'aide</p>
-               <p> Nous contacter</p>
+   
+        <div>
+            <h3>Assistance</h3>
+            <p>Centre d'aide<br>
+            <p> Nous contacter</p>
         </div>
     </div>
+
 </footer><!--fin footer-->
 </body>
 </html>
