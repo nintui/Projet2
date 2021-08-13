@@ -414,6 +414,9 @@ footer{
     height: auto;
     justify-content: space-around;
   }
+  .footer_info{
+width: 100%;
+  }
 }
 @media screen and (max-width:1000px){
 .Filtre{
