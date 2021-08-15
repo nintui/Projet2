@@ -220,9 +220,6 @@ margin-left: 30px;
 .affichage{
   margin: 30px auto auto 10px;
  } /*---------hebergements--------*/
-.titre_hebergement{
-  margin-left: 20px;
-}
  .hebergements_populaires h3, .nuit, .nuit_A_Marseille, .Marseille h3{
   font-size: 15px;
 }
@@ -267,6 +264,7 @@ margin-left: 30px;
 }
 .titre_populaires, .titre_hebergement{
   padding-top: 20px;
+  margin-left: 20px;
 }
 .populaires_grid{
   display: grid;
@@ -373,6 +371,7 @@ footer{
 @media  screen and (max-width: 1200px) {
  .Marseille{
 max-width: 1143px;
+width: 95%;
 margin-bottom: 50px;
  }
  .affichage{
@@ -495,11 +494,12 @@ nav{
 .Filtres{
   font-size: 10px;
 }/*====hebergemnets_populaires===*/
-.titre_hebergement{
-  margin-left: 0;
+.titre_hebergement, .titre_populaires{
+  margin-left: 10px;
 }
 .Marseille{
   max-width: 320px;
+  width: 100%;
   margin-left: 0;
 }
 .hebergements_Marseille, .hebergement_Marseille_ville, .hebergement_Marseille_ville img{
@@ -509,6 +509,7 @@ width: 290px;
 } 
 .activitesMarseille{
   grid: none;
+ justify-content: flex-start;
 }/*====footer===*/
 .footer_info{
   width: calc(100% - 20px);
