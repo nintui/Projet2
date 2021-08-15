@@ -159,6 +159,9 @@ margin-bottom: 30px;
   margin-right: 10px;
 margin-left: 30px;
 }
+.filtre_theme_detail:hover{
+  background-color: rgb(219, 207, 207);
+}
 .contour {
   width: 41px;
   height: 41px;
@@ -215,9 +218,12 @@ margin-left: 30px;
   flex-wrap: wrap;
 }
 .affichage{
-  margin: 60px auto auto 30px;
+  margin: 30px auto auto 10px;
  } /*---------hebergements--------*/
-.hebergements_populaires h3, .nuit, .nuit_A_Marseille, .marseille h3{
+.titre_hebergement{
+  margin-left: 20px;
+}
+ .hebergements_populaires h3, .nuit, .nuit_A_Marseille, .Marseille h3{
   font-size: 15px;
 }
 .hebergements_populaires h2{
@@ -238,7 +244,7 @@ margin-left: 30px;
   justify-content: space-around;
 }
 .hebergement_Marseille_ville{
-  margin: auto 10px 20px 15px;
+  margin: auto 10px 30px 15px;
   background-color: white;
   border-radius: 22px;
 }
@@ -275,7 +281,7 @@ margin-left: 30px;
 }
 .Marseille{
   display: flex;
-  margin: 30px auto;
+  margin: 20px auto;
   border-radius: 20px;
   max-width: 300px;
   width: 100%;
@@ -365,7 +371,15 @@ footer{
 }
 /*===========================Responsive=========================*/
 @media  screen and (max-width: 1200px) {
- .section_activites{
+ .Marseille{
+max-width: 1143px;
+margin-bottom: 50px;
+ }
+ .affichage{
+   max-width: 1143px;
+   margin-top: 10px;
+ }
+  .section_activites{
    width: 100%;
  }
   .activitesMarseille{
@@ -374,7 +388,7 @@ footer{
     align-items: center;
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 70% 30%;
   }
   .Vieuxport, .FortdePomegues_IlesduFrioul, .ParcNationaldesCalanques, .NotreDamedelaGarde_ParcLongchamp{
    margin: auto auto 20px 10px ;
@@ -410,10 +424,14 @@ footer{
   margin-right: 10px;
   width: 400px;
 }
+.activitesMarseille{
+  .max-width:600px;
+  grid-template-columns: 60% 40%;
+}
 }
 @media screen and (max-width:600px){
 body{
-  min-width: 320px;
+  min-width: 310px;
 }
 nav >.nav_inscription{
   display: none;
@@ -477,6 +495,13 @@ nav{
 .Filtres{
   font-size: 10px;
 }/*====hebergemnets_populaires===*/
+.titre_hebergement{
+  margin-left: 0;
+}
+.Marseille{
+  max-width: 320px;
+  margin-left: 0;
+}
 .hebergements_Marseille, .hebergement_Marseille_ville, .hebergement_Marseille_ville img{
 margin-left: 0;
 margin-right: 0;
